@@ -22,7 +22,9 @@
     "eslint-plugin-vue": "^6.2.2",
     "lint-staged": "^9.5.0",
     "node-sass": "^4.12.0",
+    "prerender-spa-plugin": "^3.2.1",
     "sass-loader": "^8.0.2",
+    "vue-cli-plugin-prerender-spa": "~1.1.6",
     "vue-template-compiler": "^2.6.11"
   },
   "gitHooks": {
