@@ -3,23 +3,11 @@
     <div class="page" data-size="A4">
 
       <div class="container-drawer">
-        <drawer-de></drawer-de>
-        <!-- <drawer-en v-if="language == 'en'"></drawer-en> -->
+        <my-drawer></my-drawer>
       </div>
       <div class="container-content">
-        <letter-de></letter-de>
-        <!-- <title-de v-if="content == 'title'"></title-de>
-        <cv-de v-if="content == 'cv'"></cv-de>
-        <diplom-de v-if="content == 'diplom'"></diplom-de>
-        <bachelor-de v-if="content == 'bachelor'"></bachelor-de> -->
+        <letter-page v-if="content=='letter'"></letter-page>
       </div>
-      <!-- <div class="container-content" v-if="language == 'en'">
-        <letter-en v-if="content == 'letter'"></letter-en>
-        <title-en v-if="content == 'title'"></title-en>
-        <cv-en v-if="content == 'cv'"></cv-en>
-        <diplom-en v-if="content == 'diplom'"></diplom-en>
-        <bachelor-en v-if="content == 'bachelor'"></bachelor-en>
-      </div> -->
     </div>
   </div>
 </template>
@@ -29,25 +17,9 @@ export default {
   name: "standartLayout",
   props: ["language", "content"],
   components: {
-    DrawerDe: () => import("./components/Drawer/german"),
-    // DrawerEn: () => import("./components/Drawer/english"),
-    // ----------------------------------
-    LetterDe: () => import("@/pages/letter/german"),
-    // LetterEn: () => import("@/pages/letter/english"),
-    // ----------------------------------
-    // diplomDe: () => import("@/pages/diplom/german"),
-    // diplomEn: () => import("@/pages/diplom/english"),
-    // // ----------------------------------
-    // bachelorDe: () => import("@/pages/bachelor/german"),
-    // bachelorEn: () => import("@/pages/bachelor/english"),
-    // // ----------------------------------
-    // titleDe: () => import("@/pages/title/german"),
-    // titleEn: () => import("@/pages/title/english"),
-    // // ----------------------------------
-    // cvDe: () => import("@/pages/cv/german"),
-    // cvEn: () => import("@/pages/cv/english"),
-    // ContentDe: () => import("./components/Content/german"),
-    // ContentEn: () => import("./components/Content/english"),
+    MyDrawer: () => import("./components/Drawer/Index"),
+    LetterPage: () => import("@/views/letter/Index"),
+ 
   },
 };
 </script>

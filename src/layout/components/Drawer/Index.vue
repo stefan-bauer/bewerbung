@@ -16,14 +16,14 @@
     </div>
 
     <div class="name">
-      <span class="name-title"><slot name="nametitle" /> </span>
-      <span class="name-first"><slot name="firstname" /> </span>
-      <span class="name-sir"><slot name="sirname" /></span>
+      <span class="name-title">{{$t("drawerUser.titleName")}} </span>
+      <span class="name-first">{{$t("drawerUser.firstName")}} </span>
+      <span class="name-sir">{{$t("drawerUser.sirName")}}</span>
     </div>
 
     <div class="contact-container">
       <div class="contact">
-        <div class="contact-heading"><slot name="contactheading" /></div>
+        <div class="contact-heading">{{$t("drawer.contactHeading")}}</div>
         <div class="contact-line"></div>
       </div>
 
@@ -32,8 +32,8 @@
           <i class="fa fa-map-marker"></i>
         </div>
         <div class="content">
-          <a href="https://goo.gl/maps/">
-            <address><slot name="address" /></address>
+          <a :href="`https://goo.gl/maps/${$t('drawerUser.addressMaps')}`">
+            <address>{{$t("drawerUser.address")}}</address>
           </a>
         </div>
       </div>
@@ -43,8 +43,8 @@
           <i class="fa fa-envelope-o"></i>
         </div>
         <div class="content">
-          <a href="mailto:jamesbond@007.com">
-            <slot name="mail" />
+          <a :href="`mailto:${$t('drawerUser.mail')}`">
+            {{$t("drawerUser.mail")}}
           </a>
         </div>
       </div>
@@ -53,7 +53,7 @@
         <div class="icon">
           <i class="fa fa-phone"></i>
         </div>
-        <div class="content"><slot name="phone" /></div>
+        <div class="content">{{$t("drawerUser.phone")}}</div>
       </div>
 
       <div class="linkedin little_top_space flexrow">
@@ -61,8 +61,8 @@
           <i class="fa fa-linkedin"></i>
         </div>
         <div class="content">
-          <a href="https://www.linkedin.com/in/jamesbodn">
-            <slot name="linkedin" />
+          <a :href="`https://www.linkedin.com/in/${$t('drawerUser.linkedin')}`">
+            {{$t("drawerUser.linkedin")}}
           </a>
         </div>
       </div>
@@ -79,7 +79,11 @@ export default {
     };
   },
 
+
   methods: {
+    // click(){
+    //   console.log(this.$i18n.messages[this.$i18n.locale])
+    // },
     setAltImg(event) {
       console.log("set Alt is coalled");
       event.target.src = "images/default/default_avatar.png";

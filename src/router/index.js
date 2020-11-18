@@ -18,6 +18,13 @@ const routes = [
     props: { language: 'de' },
     component: () =>
       import(/* webpackChunkName: "about" */ "../document/document.vue")
+  },
+  {
+    path: "/default",
+    name: "Default",
+    props: { language: 'default' },
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../document/document.vue")
   }
 ]
 

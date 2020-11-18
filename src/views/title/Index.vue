@@ -1,37 +1,37 @@
 <template>
   <div class="content">
     <page-header>
-      <template v-slot:header><slot name="header"/></template>
+      <template v-slot:header>{{$t("titlePage.pageHeader")}}</template>
     </page-header>
 
     <div class="middle">
-      <h1 class="title"><slot name="title"/></h1>
+      <h1 class="title">{{$t("titlePage.pageTitle")}}</h1>
     </div>
     <div class="footer ">
       <div class="table_of_content onlyPrint">
-        <div class="heading">Inhalt</div>
+        <div class="heading">{{$t("titlePage.TOC")}}</div>
         <div class="line"></div>
         <div class="table ">
           <ul>
             <li><a href="#cv"></a></li>
             <li><a href="#skills"></a></li>
-            <li><a href="#diplom"></a></li>
-            <li><a href="#bachelor"></a></li>
-            <li><a href="#htl"></a></li>
+            <li><a href="#certification1"></a></li>
+            <li><a href="#certification2"></a></li>
+            <li><a href="#certification3"></a></li>
             <!-- <li><a href="#competences-title"></a></li> -->
           </ul>
         </div>
       </div>
       <div class="table_of_content noPrint">
-        <div class="heading">Inhalt</div>
+        <div class="heading">{{$t("titlePage.TOC")}}</div>
         <div class="line"></div>
         <div class="table ">
           <ul>
-            <li><a href="#cv">CV</a></li>
-            <li><a href="#skills">Skill</a></li>
-            <li><a href="#diplom"></a>diplom</li>
-            <li><a href="#bachelor">bach</a></li>
-            <li><a href="#htl">htl</a></li>
+            <li><a href="#cv">{{$t("titlePage.TOCContent.cv")}}</a></li>
+            <li><a href="#skills">{{$t("titlePage.TOCContent.skills")}}</a></li>
+            <li><a href="#certification2">{{$t("titlePage.TOCContent.certification1")}}</a></li>
+            <li><a href="#certification2">{{$t("titlePage.TOCContent.certification2")}}</a></li>
+            <li><a href="#certification2">{{$t("titlePage.TOCContent.certification3")}}</a></li>
             <!-- <li><a href="#competences-title"></a></li> -->
           </ul>
         </div>

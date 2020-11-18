@@ -1,40 +1,31 @@
 <template>
   <div class="container">
     <page-header>
-      <template v-slot:header><slot name="name" /></template>
-      <template v-slot:hiddentitle><slot name="hiddentitle" /></template>
+      <template v-slot:header>{{$t("letter.pageHeader")}}</template>
+      <template v-slot:hiddentitle>{{$t("letter.hiddenHeader")}}</template>
     </page-header>
     <div class="middle">
-<div class="sprache" @click="click">SPRACHE</div>
 
-<!-- <p v-html="$t('message')"></p> -->
-
-<!-- <div class="letter" v-for="key,value in letterparagraphs">
-  <p>{{value}}</p><b>{{key}}</b>
-</div> -->
-
-
-
----------------
-      <div class="date">
-        <slot name="date" />
+      <div class="date" @click="click">
+        {{$t("letter.date")}}
       </div>
       <div class="subject">
-        <slot name="subject" />
+        {{$t("letter.subject")}}
       </div>
       <div class="salutation">
-        <slot name="salutation" />
+        {{$t("letter.salutation")}}
       </div>
       <div class="letter">
-        <!-- <p v-for="value,key in letterContent" :key="key">
-          {{value}}</p> -->
-
+          <div v-for="(value,key) in $t('letter.letterContent')" :key="key">
+            <p v-if="!checkHtml(value)">{{value}}</p>
+            <p v-if="checkHtml(value)" v-html=value />
+            </div>
       </div>
 
       <div class="letter-ending">
-        <slot name="ending" />
+        {{$t("letter.letterEnding")}}
         <div class="signing-name">
-        <slot name="signing" />
+        {{$t("letter.signing")}}
 
         </div>
         <div class="signing">
@@ -59,20 +50,9 @@
 import PageHeader from "./components/Header";
 export default {
   name: "letterLayout",
-  computed:{
-    letterparagraphs(){
-      const temp = this.$i18n.messages[this.$i18n.locale].iter
-      // console.log(temp)
-      return temp
-    },
-    letterContent(){
-      const temp = this.$i18n.messages[this.$i18n.locale].letter.letterContent
-      return temp
-    }
-  },
   data() {
     return {
-      source: "images/persona/persona_sign.svg",
+      source: `images/persona/${this.$t('letter.signingImg')}`,
     };
   },
   components: {
@@ -81,12 +61,29 @@ export default {
   methods: {
     setAltImg(event) {
       console.log("set Alt is coalled");
-      event.target.src = "images/default/default_sign.svg";
+      event.target.src = `images/default/${this.$i18n.messages.default.letter.signingImg}`;
+    },
+    checkHtml(text){
+      // let text ='Hallo <b>ihr</b> lieben wie gehts'
+      let matchTag = /<(?:.|\s)*?>/g;
+      let result = text.match (matchTag);
+      console.log (result);
+      return result
+      // const myLocal=this.$i18n.locale
+      // console.log(myLocal)
+      // console.log(this.$i18n.messages)
+      // console.log(this.$i18n.local)
     },
     click(){
-      const myLocal=this.$i18n.locale
-      console.log(myLocal)
-      console.log(this.$i18n.messages)
+      // let text ='Hallo <b>ihr</b> lieben wie gehts'
+      // let matchTag = /<(?:.|\s)*?>/g;
+      // let result = text.match (matchTag);
+      // console.log (result);
+      // const myLocal=this.$i18n.locale
+      // console.log(`Img/${this.$t('letter.signingImg')}`)
+      console.log(this.source)
+      // console.log(this.$t('letter.signingImg'))
+      // console.log(this.$i18n.messages)
       // console.log(this.$i18n.local)
     }
   },
