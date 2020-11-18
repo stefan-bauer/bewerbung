@@ -1,0 +1,76 @@
+$paragraph-color: green;
+$title-color: #404040;
+
+$heading-color: black;
+$drawer-background-color: #253848;
+
+$primary:rgb(107, 0, 128);
+
+
+// Drawer -Colors
+
+$gray-light: #f2f2f2;
+$gray: #A8ABB2;
+
+$blue-dark:#243748;
+
+
+//Allgemein -Colors
+$gray-middle: #404040;
+$gray-dark: #222222;
+
+// Table -Colors
+
+$table-dark: #595959;
+$table-light: #7f7f7f;
+
+
+
+
+
+// Allgemein
+
+$color-default-header: black;
+$color-default-line: black;
+$color-default-text: $gray-dark;
+
+
+// Title
+
+$color-title: $gray-middle;
+$color-subtitle: $gray-middle;
+$color-title-line: $gray-middle;
+
+
+// Image
+
+$color-image-boarder:$gray;
+
+
+// worktable
+
+$color-worktable-heading: black;
+$color-worktable-subheading: $table-dark;
+$color-worktable-date: $table-light;
+
+
+
+
+$margin-content-left-lv1:0.25cm;
+$margin-content-left-lv2:0.25cm;
+
+$innercontent-margin-left: 0.25cm;
+
+$line-hight-small:1px;
+
+// ---------------------------
+
+// Drawer
+
+$color-drawer-background: $drawer-background-color;
+// $color-drawer-background: #f0f0f031;
+$color-drawer-heading: $gray-light;
+$color-drawer-line: $gray;
+$color-drawer-content: $gray-light;
+$color-drawer-icon: $gray;
+$color-drawer-avatarboarder: $gray-light;

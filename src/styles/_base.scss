@@ -1,0 +1,140 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 11pt;
+  // color: green;
+  color: $color-default-text;
+  font-family: carlito;
+  line-height: normal;
+  
+  // font-family: calibri;
+}
+
+body {
+  // background-color: rgb(90, 3, 102);
+  background-color: beige;
+  // width: 21cm;
+}
+
+
+@media print {
+  .noPrint {
+      display:none;
+  }
+}
+@media screen {
+   .onlyPrint {
+       display: none;
+   }
+}
+
+
+@page {
+  size: A4;
+  box-sizing: inherit;
+  margin: 0cm 1cm  1cm 0;
+  padding: 0;
+  
+}
+// @page chapter {
+//   counter-reset: mypage 1;
+// }
+
+
+@page { 
+  // $test: counter(pages);
+
+  counter-increment: page;
+  // counter-increment: myrestl;
+} 
+
+
+@page:first {
+   counter-reset: page -1;
+  //  counter-reset: ;
+
+  //  counter-reset: pages -1; 
+  }
+
+
+.page{
+  // --test:2;
+    // counter-increment: page;
+
+}
+.h2{
+    // counter-increment: mypage;
+
+}
+// $color-drawer-background: blue;
+
+@page {
+
+  @bottom-left{
+    content: '';
+
+  }
+
+  @bottom-center{
+
+    content: '';
+
+  }
+  
+  @bottom-right{
+    content: counter(page) ' /  6';
+    font-size: 9pt;
+    height: 0cm;
+    vertical-align: top;
+    width: 100%;
+  }
+
+
+  @top-right{
+    font-size: 9pt;
+    height: 0cm;
+    vertical-align: top;
+    width: 100%;
+  }
+
+}
+@page:first {
+  @bottom-left{
+    content: '';
+
+  }
+
+  @bottom-center{
+
+    content: '';
+
+  }
+  
+  @bottom-right{
+    content: '';
+  }
+
+}
+@page naked {
+  @bottom-left{
+    content: '';
+
+  }
+
+  @bottom-center{
+
+    content: '';
+
+  }
+  
+  @bottom-right{
+    content: '';
+  }
+
+}
