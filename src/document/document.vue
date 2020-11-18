@@ -32,6 +32,9 @@ export default {
   //     return false;
   //   },
   // },
+  mounted(){
+    this.$i18n.locale = this.language;
+  },
   components:{
     StandartLayout
   }

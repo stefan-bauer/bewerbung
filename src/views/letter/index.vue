@@ -7,11 +7,7 @@
     <div class="middle">
 <div class="sprache" @click="click">SPRACHE</div>
 
-<!-- <p v-html="$t('message')"></p> -->
-
-<!-- <div class="letter" v-for="key,value in letterparagraphs">
-  <p>{{value}}</p><b>{{key}}</b>
-</div> -->
+<p>{{ $t("message") }}</p>
 
 
 
@@ -26,9 +22,7 @@
         <slot name="salutation" />
       </div>
       <div class="letter">
-        <!-- <p v-for="value,key in letterContent" :key="key">
-          {{value}}</p> -->
-
+        <slot name="letter" />
       </div>
 
       <div class="letter-ending">
@@ -59,17 +53,6 @@
 import PageHeader from "./components/Header";
 export default {
   name: "letterLayout",
-  computed:{
-    letterparagraphs(){
-      const temp = this.$i18n.messages[this.$i18n.locale].iter
-      // console.log(temp)
-      return temp
-    },
-    letterContent(){
-      const temp = this.$i18n.messages[this.$i18n.locale].letter.letterContent
-      return temp
-    }
-  },
   data() {
     return {
       source: "images/persona/persona_sign.svg",
@@ -86,7 +69,7 @@ export default {
     click(){
       const myLocal=this.$i18n.locale
       console.log(myLocal)
-      console.log(this.$i18n.messages)
+      console.log(this.$i18n.messages[myLocal])
       // console.log(this.$i18n.local)
     }
   },
