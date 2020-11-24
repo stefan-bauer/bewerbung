@@ -17,15 +17,15 @@ module.exports = {
     prerenderSpa: {
       registry: undefined,
       renderRoutes: [
-        '/'
+        '/de','/en'
       ],
       useRenderEvent: true,
       headless: true,
       onlyProduction: true
     },
     i18n: {
-      locale: 'en',
-      fallbackLocale: 'en',
+      locale: 'default',
+      fallbackLocale: 'default',
       localeDir: 'locales',
       enableInSFC: false
     }

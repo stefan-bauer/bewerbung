@@ -75,7 +75,7 @@ export default {
   name: "Drawerlayout",
   data() {
     return {
-      source: "images/persona/persona_avatar1.jpg",
+      source: `images/persona/${this.$t('drawerUser.avatarImg')}`,
     };
   },
 
@@ -86,7 +86,8 @@ export default {
     // },
     setAltImg(event) {
       console.log("set Alt is coalled");
-      event.target.src = "images/default/default_avatar.png";
+      // event.target.src = "images/default/default_avatar.png";
+      event.target.src = `images/default/${this.$i18n.messages.default.drawerUser.avatarImg}`;
     },
   },
 };

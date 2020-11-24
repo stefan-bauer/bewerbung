@@ -1,32 +1,30 @@
 <template>
   <div class="container">
-    <page-header>
-      <template v-slot:header>{{$t("letter.pageHeader")}}</template>
-      <template v-slot:hiddentitle>{{$t("letter.hiddenHeader")}}</template>
+    <page-header :subheader="subheader">
+      <template v-slot:header>{{ $t("letter.pageHeader") }}</template>
+      <template v-slot:subheader>{{ $t("letter.hiddenHeader") }}</template>
     </page-header>
     <div class="middle">
-
       <div class="date" @click="click">
-        {{$t("letter.date")}}
+        {{ $t("letter.date") }}
       </div>
       <div class="subject">
-        {{$t("letter.subject")}}
+        {{ $t("letter.subject") }}
       </div>
       <div class="salutation">
-        {{$t("letter.salutation")}}
+        {{ $t("letter.salutation") }}
       </div>
       <div class="letter">
-          <div v-for="(value,key) in $t('letter.letterContent')" :key="key">
-            <p v-if="!checkHtml(value)">{{value}}</p>
-            <p v-if="checkHtml(value)" v-html=value />
-            </div>
+        <div v-for="(value, key) in $t('letter.letterContent')" :key="key">
+          <p v-if="!checkHtml(value)">{{ value }}</p>
+          <p v-if="checkHtml(value)" v-html="value" />
+        </div>
       </div>
 
       <div class="letter-ending">
-        {{$t("letter.letterEnding")}}
+        <p>{{ $t("letter.letterEnding") }}</p>
         <div class="signing-name">
-        {{$t("letter.signing")}}
-
+          {{ $t("letter.signing") }}
         </div>
         <div class="signing">
           <img
@@ -47,12 +45,16 @@
 </template>
 
 <script>
-import PageHeader from "./components/Header";
+import PageHeader from "@/components/Header";
 export default {
   name: "letterLayout",
   data() {
     return {
-      source: `images/persona/${this.$t('letter.signingImg')}`,
+      source: `images/persona/${this.$t("letter.signingImg")}`,
+      subheader: {
+        hiddentitle: true,
+        active: true,
+      },
     };
   },
   components: {
@@ -60,38 +62,36 @@ export default {
   },
   methods: {
     setAltImg(event) {
-      console.log("set Alt is coalled");
       event.target.src = `images/default/${this.$i18n.messages.default.letter.signingImg}`;
     },
-    checkHtml(text){
+    checkHtml(text) {
       // let text ='Hallo <b>ihr</b> lieben wie gehts'
       let matchTag = /<(?:.|\s)*?>/g;
-      let result = text.match (matchTag);
-      console.log (result);
-      return result
+      let result = text.match(matchTag);
+      console.log(result);
+      return result;
       // const myLocal=this.$i18n.locale
       // console.log(myLocal)
       // console.log(this.$i18n.messages)
       // console.log(this.$i18n.local)
     },
-    click(){
+    click() {
       // let text ='Hallo <b>ihr</b> lieben wie gehts'
       // let matchTag = /<(?:.|\s)*?>/g;
       // let result = text.match (matchTag);
       // console.log (result);
       // const myLocal=this.$i18n.locale
       // console.log(`Img/${this.$t('letter.signingImg')}`)
-      console.log(this.source)
+      console.log(this.source);
       // console.log(this.$t('letter.signingImg'))
       // console.log(this.$i18n.messages)
       // console.log(this.$i18n.local)
-    }
+    },
   },
 };
 </script>
 
 <style lang="scss" scoped>
-
 .container {
   // background-color: aquamarine;
   display: flex;
@@ -123,7 +123,7 @@ export default {
       text-transform: uppercase;
       margin-bottom: 1.5cm;
     }
-    .salutation{
+    .salutation {
       // background-color: rgb(173, 247, 179);
       margin-bottom: 0.75cm;
       flex: 1 1 100%;
@@ -134,11 +134,10 @@ export default {
       font-weight: bold;
     }
 
-     .letter {
+    .letter {
       // background-color: rgb(244, 127, 255);
       font-family: Carlito;
       flex: 1 1 100%;
-
       font-size: 11pt;
       line-height: 1.3;
       // color: black;
@@ -148,7 +147,7 @@ export default {
         // background-color: rgb(244, 127, 255);
         margin-bottom: 0.5cm;
         flex: 1 1 100%;
-        color:red;
+        // color: red;
       }
 
       // p:last-child {
@@ -167,14 +166,15 @@ export default {
       flex: 1 1 100%;
 
       p {
-        background-color: rgb(127, 219, 255);
-        margin-top: 1cm;
-        margin-bottom: 0.5cm;
-        font-family: Carlito;
-        font-size: 10pt;
-        color: black;
-        font-weight: bold;
-        flex: 1 1 100%;
+        // background-color: rgb(127, 219, 255);
+        // margin-top: 1cm;
+        // margin-bottom: 0.5cm;
+        // font-family: Carlito;
+        // font-size: 10pt;
+        // color: black;
+        // font-weight: bold;
+        // flex: 1 1 100%;
+        // padding:0.3cm;
       }
 
       .signing-name {
@@ -192,7 +192,7 @@ export default {
       }
     }
   }
-    .footer {
+  .footer {
     // background-color: burlywood;
     height: 0.2cm;
     flex: 1 1 100%;

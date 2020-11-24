@@ -14,6 +14,7 @@ export const drawerUser = {
   mail: "james.bond@007.com",
   phone: "+00 007 / 00 70 072",
   linkedin: "james-bond",
+  avatarImg: "default_avatar.png",
 };
 
 export const drawer = {
@@ -45,8 +46,30 @@ export const titlePage = {
   TOCContent: {
     cv: "Curriculum Vitae",
     skills: "Skills",
-    certification1: "Certification 1",
-    certification2: "Certification 2",
-    certification3: "Certification 3",
+    highcf: "High Certification",
+    middlecf: "Middle Certification",
+    lowcf: "Low Certification",
   },
 };
+
+export const HighCertification = {
+  pageHeader:"High Certification",
+  subHeader:"London Underground Agency",
+  srcImg:"default_certification.png",
+  srcImgDefault:"default_certification.png"
+}
+export const MiddleCertification = {
+  pageHeader:"Middle Certification",
+  subHeader:"London Underground Agency",
+  srcImg:"default_certification.png",
+  srcImgDefault:"default_certification.png"
+
+}
+export const LowCertification = {
+  pageHeader:"High Certification",
+  subHeader:"London Underground Agency",
+  srcImgFront:"default_certification.png",
+  srcImgBack:"default_certification.png",
+  srcImgDefault:"default_certification.png"
+
+}

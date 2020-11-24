@@ -16,7 +16,7 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  // background-color: peru;
+  background-color: peru;
   text-align: center;
   margin: 0 auto;
 

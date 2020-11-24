@@ -14,6 +14,7 @@
 <script>
 export default {
   name: "innerheader",
+  props: ["header"],
 };
 </script>
 
@@ -23,7 +24,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
   text-align: left;
   margin-bottom: 0.15cm;
   // margin: 0 auto;

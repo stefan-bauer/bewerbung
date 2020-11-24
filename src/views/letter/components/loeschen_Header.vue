@@ -3,7 +3,9 @@
     <div class="spacer"></div>
     <h2><slot name="header" /></h2>
     <div class="line"></div>
-    <div class="subheader"><slot name="hiddentitle" /></div>
+    <div class="subheader">
+      <h1><slot name="hiddentitle" /></h1>
+    </div>
     <div class="spacer-bottom"></div>
   </div>
 </template>
@@ -16,7 +18,7 @@ export default {
 
 <style lang="scss" scoped>
 .header {
-  // background-color: peru;
+  background-color: peru;
   text-align: center;
   margin: 0 auto;
 
@@ -50,6 +52,7 @@ export default {
     font-family: Raleway;
     font-size: 14pt;
     color: $color-subtitle;
+
     h1 {
       font-size: 1pt;
       color: transparent;

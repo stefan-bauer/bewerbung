@@ -1,37 +1,47 @@
 <template>
   <div class="content">
-    <page-header>
-      <template v-slot:header>{{$t("titlePage.pageHeader")}}</template>
+    <page-header class="page-header" :subheader="subheader">
+      <template v-slot:header>{{ $t("titlePage.pageHeader") }}</template>
     </page-header>
 
     <div class="middle">
-      <h1 class="title">{{$t("titlePage.pageTitle")}}</h1>
+      <h1 class="title">{{ $t("titlePage.pageTitle") }}</h1>
     </div>
-    <div class="footer ">
+    <div class="footer">
       <div class="table_of_content onlyPrint">
-        <div class="heading">{{$t("titlePage.TOC")}}</div>
+        <div class="heading">{{ $t("titlePage.TOC") }}</div>
         <div class="line"></div>
-        <div class="table ">
+        <div class="table">
           <ul>
             <li><a href="#cv"></a></li>
             <li><a href="#skills"></a></li>
-            <li><a href="#certification1"></a></li>
-            <li><a href="#certification2"></a></li>
-            <li><a href="#certification3"></a></li>
+            <li><a href="#highcf"></a></li>
+            <li><a href="#middlecf"></a></li>
+            <li><a href="#lowcf"></a></li>
             <!-- <li><a href="#competences-title"></a></li> -->
           </ul>
         </div>
       </div>
       <div class="table_of_content noPrint">
-        <div class="heading">{{$t("titlePage.TOC")}}</div>
+        <div class="heading">{{ $t("titlePage.TOC") }}</div>
         <div class="line"></div>
-        <div class="table ">
+        <div class="table">
           <ul>
-            <li><a href="#cv">{{$t("titlePage.TOCContent.cv")}}</a></li>
-            <li><a href="#skills">{{$t("titlePage.TOCContent.skills")}}</a></li>
-            <li><a href="#certification2">{{$t("titlePage.TOCContent.certification1")}}</a></li>
-            <li><a href="#certification2">{{$t("titlePage.TOCContent.certification2")}}</a></li>
-            <li><a href="#certification2">{{$t("titlePage.TOCContent.certification3")}}</a></li>
+            <li>
+              <a href="#cv">{{ $t("titlePage.TOCContent.cv") }}</a>
+            </li>
+            <li>
+              <a href="#skills">{{ $t("titlePage.TOCContent.skills") }}</a>
+            </li>
+            <li>
+              <a href="#highcf">{{ $t("titlePage.TOCContent.highcf") }}</a>
+            </li>
+            <li>
+              <a href="#middlecf">{{ $t("titlePage.TOCContent.middlecf") }}</a>
+            </li>
+            <li>
+              <a href="#lowcf">{{ $t("titlePage.TOCContent.lowcf") }}</a>
+            </li>
             <!-- <li><a href="#competences-title"></a></li> -->
           </ul>
         </div>
@@ -41,28 +51,39 @@
 </template>
 
 <script>
-import PageHeader from "./components/Header";
+import PageHeader from "@/components/Header";
 export default {
   name: "title_content",
   components: {
-    PageHeader
-  }
+    PageHeader,
+  },
+  data() {
+    return {
+      subheader: {
+        hiddentitle: false,
+        active: false,
+      },
+    };
+  },
 };
 </script>
 
 <style lang="scss" scoped>
 .content {
-//   background-color: rgba(71, 207, 8, 0.726);s
+  // background-color: rgba(71, 207, 8, 0.726);
   display: flex;
   flex-wrap: wrap;
-    flex:1 1 100%;
+  flex: 1 1 100%;
   align-content: space-between;
+
+  .page-header {
+    flex: 1 1 100%;
+  }
 
   .middle {
     // background-color: green;s
     // flex-grow: 10;
     flex-basis: inherit;
-
     text-align: center;
 
     h1 {

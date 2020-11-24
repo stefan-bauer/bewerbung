@@ -7,6 +7,13 @@
       </div>
       <div class="container-content">
         <letter-page v-if="content=='letter'"></letter-page>
+        <title-page v-if="content=='title'"></title-page>
+        <cv-page v-if="content=='cv'"></cv-page>
+        <skills-page v-if="content=='skills'"></skills-page>
+        <highcf-page v-if="content=='hightCertification'"></highcf-page>
+        <middlecf-page v-if="content=='middleCertification'"></middlecf-page>
+        <lowcf-page v-if="content=='lowCertification'"></lowcf-page>
+        <lowcf-dbpage v-if="content=='lowCertificationDouble'"></lowcf-dbpage>
       </div>
     </div>
   </div>
@@ -15,11 +22,18 @@
 <script>
 export default {
   name: "standartLayout",
-  props: ["language", "content"],
+  props: [ "content"],
   components: {
     MyDrawer: () => import("./components/Drawer/Index"),
     LetterPage: () => import("@/views/letter/Index"),
- 
+    TitlePage: () => import("@/views/title/Index"),
+    CvPage: () => import("@/views/cv/Index"),
+    SkillsPage: () => import("@/views/skills/Index"),
+    highcfPage: () => import("@/views/certification/HighCertification"),
+    middlecfPage: () => import("@/views/certification/MiddleCertification"),
+    lowcfPage: () => import("@/views/certification/LowCertification"),
+    lowcfDbpage: () => import("@/views/certificationDouble/LowCertification"),
+    // Page: () => import("@/views/title/Index"),
   },
 };
 </script>
@@ -31,7 +45,6 @@ export default {
   flex-direction: row;
   flex-wrap: nowrap; /* | wrap | wrap-reverse; */
   justify-content: flex-start;
-
   align-items: stretch;
   // flex-wrap: wrap;
 }
