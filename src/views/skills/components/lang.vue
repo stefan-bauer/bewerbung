@@ -13,12 +13,12 @@
         >
           <!-- {{item.title}}: {{item.description}} -->
 
-          <span class="langitem-title">{{ item.title }}</span>
+          <span class="langitem-title title">{{ item.title }}</span>
           <span class="langitem-connector" v-if="item.description != null"
             >:</span
           >
           <span
-            class="langitem-description"
+            class="langitem-description description"
             v-if="item.description != null"
             v-html="item.description"
           ></span>
@@ -80,43 +80,43 @@ export default {
 
 <style lang="scss" scoped>
 .lang-content {
-  background-color: lightseagreen;
+  // background-color: lightseagreen;
+  margin-left: $margin-content-left;
 
-    .lang-container {
-      background-color: rgb(164, 19, 184);
+  .lang-container {
+    // background-color: rgb(164, 19, 184);
+    display: flex;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    margin-left: $margin-inner-content-left;
+    padding-bottom: 0.2cm;
+
+    .lang-item {
+      // background-color: rgb(196, 246, 255);
       display: flex;
-      flex: 1 1 100%;
-      flex-wrap: wrap;
-
-      .lang-item {
-        background-color: rgb(196, 246, 255);
-        margin-top: 0.05cm;
-        margin-bottom: 0.05cm;
-        display: flex;
-      }
-
-      .langitem-title {
-        background-color: rgb(196, 246, 255);
-      }
-      .langitem-connector {
-        background-color: rgb(51, 50, 58);
-        margin-right: 4px;
-      }
-      .langitem-description {
-        background-color: rgb(2, 145, 170);
-      }
-
-
-      .lang-itemending {
-        background-color: rgb(255, 196, 237);
-        margin-right: 4px;
-      }
-
-      .full-flexing {
-        background-color: rgb(251, 255, 196);
-        flex: 1 1 100%;
-      }
+      margin-top: 0.15cm;
     }
-  
+
+    .langitem-title {
+      // background-color: rgb(196, 246, 255);
+    }
+    .langitem-connector {
+      // background-color: rgb(51, 50, 58);
+      margin-right: 4px;
+    }
+    .langitem-description {
+      // background-color: rgb(2, 145, 170);
+    }
+
+    .lang-itemending {
+      // background-color: rgb(255, 196, 237);
+      margin-right: 4px;
+    }
+
+    .full-flexing {
+      // background-color: rgb(251, 255, 196);
+      flex: 1 1 100%;
+    }
+  }
 }
 </style>

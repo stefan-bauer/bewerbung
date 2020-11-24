@@ -1,47 +1,36 @@
 <template>
   <div class="content">
     <page-header class="page-header" :subheader="subheader">
-      <template v-slot:header><h2>{{ $t("Skills.pageHeader") }}</h2></template>
+      <template v-slot:header
+        ><h2>{{ $t("Skills.pageHeader") }}</h2></template
+      >
     </page-header>
 
     <div class="middle">
-      <!-- PROFILE -->
       <it-section class="it"></it-section>
       <lang-section class="lang"></lang-section>
-      <!-- <work-section class="work"></work-section>
-      <education-section class="education"></education-section>
-      <publicated-section class="publicated"></publicated-section>
-      <other-section class="other"></other-section> -->
     </div>
   </div>
 </template>
 <script>
-// import InnerHeader from "./components/InnerHeader";
 import itSection from "./components/it";
 import langSection from "./components/lang";
-// import workSection from "./components/work";
-// import publicatedSection from "./components/publicated";
-// import educationSection from "./components/education";
-// import otherSection from "./components/other";
+
 import PageHeader from "@/components/Header";
 export default {
-  name:"skills",
+  name: "skills",
   components: {
     itSection,
     langSection,
-    // workSection,
-    // publicatedSection,
-    // educationSection,
-    // otherSection,
     PageHeader,
   },
-  data(){
-    return{
-      subheader:{
-        hiddentitle:true,
-        active:true
-      }
-    }
+  data() {
+    return {
+      subheader: {
+        hiddentitle: true,
+        active: true,
+      },
+    };
   },
   methods: {
     checkHtml(text) {
@@ -51,23 +40,40 @@ export default {
       let result = text.match(matchTag);
       console.log(result);
       return result;
-
     },
   },
 };
 </script>
 <style lang="scss" scoped>
 
-/deep/ h5  {
-  background-color: rgb(218, 24, 24);
+/deep/ h5 {
+  // background-color: rgb(218, 24, 24);
   flex: 2 2 auto;
   // -webkit-flex: 2 2 auto;
   font-size: 10pt;
   font-weight: bold;
   color: $color-worktable-heading;
 }
-/deep/ h4  {
-  background-color: rgba(241, 110, 110, 0.596);
+/deep/ h4 {
+  // background-color: rgba(241, 110, 110, 0.596);
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 11pt;
+  font-style: normal;
+
+  // -----grundeinstellunge h4
+  display: block;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  // margin-block-start: 1.33em;
+  // margin-block-end: 1.33em;
+  // margin-inline-start: 0px;
+  // margin-inline-end: 0px;
+  font-weight: 400;
+  // -------------
+
   // flex: 2 2 auto;
   // // -webkit-flex: 2 2 auto;
   // font-size: 10pt;
@@ -75,19 +81,40 @@ export default {
   // color: $color-worktable-heading;
 }
 
-.page-header{
-  flex:1 1 100%;
+// /deep/ h3 { 
+//   color:green !important;
+//   font-size: 17pt !important;
+// }
+
+/deep/ .title {
+  // color: $gray-middle;
+}
+/deep/ .description {
+  // color: $color-worktable-heading;
+  color: $gray-middle;
+}
+
+.page-header {
+  flex: 1 1 100%;
 }
 
 .content {
-  background-color: rgb(0, 68, 255);
-  // display:flex;
-  flex:1 1 100%;
+  // background-color: rgb(0, 68, 255);
+  flex: 1 1 100%;
 
   .middle {
-    background-color: rgb(228, 185, 245);
+    // margin-top: 1cm;
+    // background-color: rgb(228, 185, 245);
+    .it {
+      // background-color: rgb(228, 185, 245);
+      margin-top: 1cm;
 
+    }
 
+    .lang {
+      // background-color: rgb(240, 245, 174);
+      margin-top: 1cm;
+    }
   }
 }
 </style>

@@ -21,11 +21,15 @@
           >
             <!-- {{item.title}}: {{item.description}} -->
 
-            <span class="ititem-title">{{ item.title }}</span>
+            <span class="ititem-title title">{{ item.title }}</span>
             <span class="ititem-connector" v-if="item.description != null"
               >:</span
             >
-            <span class="ititem-description" v-if="item.description != null" v-html="item.description"></span>
+            <span
+              class="ititem-description description"
+              v-if="item.description != null"
+              v-html="item.description"
+            ></span>
             <!-- the ending -->
             <div
               class="it-itemending"
@@ -37,7 +41,6 @@
         </div>
       </div>
     </div>
-
   </div>
   <!-- </div> -->
   <!-- </div> -->
@@ -81,49 +84,49 @@ export default {
 
 <style lang="scss" scoped>
 .it-content {
-  background-color: lightseagreen;
+  // background-color: lightseagreen;
+  margin-left: $margin-content-left;
 
   .it-types {
-    background-color: lightpink;
+    // background-color: lightpink;
 
     .it-container {
-      background-color: rgb(164, 19, 184);
+      // background-color: rgb(164, 19, 184);
       display: flex;
       flex: 1 1 100%;
       flex-wrap: wrap;
+      margin-left: $margin-inner-content-left;
+      padding-bottom: 0.2cm;
+      padding-bottom: 0.75cm;
 
       .it-item {
-        background-color: rgb(196, 246, 255);
-        margin-top: 0.05cm;
-        margin-bottom: 0.05cm;
+        // background-color: rgb(196, 246, 255);
+        margin-top: 0.15cm;
+        // margin-bottom: 0.15cm;
         display: flex;
       }
 
       .ititem-title {
-        background-color: rgb(196, 246, 255);
+        // background-color: rgb(196, 246, 255);
       }
       .ititem-connector {
-        background-color: rgb(51, 50, 58);
+        // background-color: rgb(51, 50, 58);
         margin-right: 4px;
       }
       .ititem-description {
-        background-color: rgb(2, 145, 170);
+        // background-color: rgb(2, 145, 170);
       }
 
       .it-itemending {
-        background-color: rgb(255, 196, 237);
+        // background-color: rgb(255, 196, 237);
         margin-right: 4px;
-
       }
 
       .full-flexing {
-        background-color: rgb(251, 255, 196);
+        // background-color: rgb(251, 255, 196);
         flex: 1 1 100%;
       }
     }
   }
-  
 }
-
-
 </style>
