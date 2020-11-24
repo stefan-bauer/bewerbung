@@ -7,6 +7,7 @@
     <div class="middle">
       <!-- PROFILE -->
       <it-section class="it"></it-section>
+      <lang-section class="lang"></lang-section>
       <!-- <work-section class="work"></work-section>
       <education-section class="education"></education-section>
       <publicated-section class="publicated"></publicated-section>
@@ -17,6 +18,7 @@
 <script>
 // import InnerHeader from "./components/InnerHeader";
 import itSection from "./components/it";
+import langSection from "./components/lang";
 // import workSection from "./components/work";
 // import publicatedSection from "./components/publicated";
 // import educationSection from "./components/education";
@@ -26,6 +28,7 @@ export default {
   name:"skills",
   components: {
     itSection,
+    langSection,
     // workSection,
     // publicatedSection,
     // educationSection,
@@ -84,22 +87,7 @@ export default {
   .middle {
     background-color: rgb(228, 185, 245);
 
-    .profile {
-      background-color: rgb(19, 0, 189);
-    }
 
-    .work {
-      background-color: lightcoral;
-    }
-    .education {
-      background-color: rgb(180, 128, 240);
-    }
-    .publicated {
-      background-color: lightcoral;
-    }
-    .other {
-      background-color: lightcoral;
-    }
   }
 }
 </style>

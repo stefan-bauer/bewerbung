@@ -1,44 +1,43 @@
 <template>
   <div>
     <inner-header>
-      <template v-slot:header> {{ $t("Skills.It.Header") }} </template>
+      <template v-slot:header> {{ $t("Skills.Lang.Header") }} </template>
     </inner-header>
-    <div class="it-content">
-      <div
-        class="it-types"
-        v-for="(type, outeridx) in $t('Skills.It.Items')"
-        :key="outeridx"
-      >
-        <div class="it-types--header">
-          <h4>{{ type.Header }}</h4>
-        </div>
-        <div class="it-container">
-          <div
-            class="it-item"
-            v-for="(item, idx) in type.Content"
-            :key="idx"
-            :class="{ 'full-flexing': type.Type != 'inline' }"
-          >
-            <!-- {{item.title}}: {{item.description}} -->
+    <div class="lang-content">
+      <div class="lang-container">
+        <div
+          class="lang-item"
+          v-for="(item, idx) in $t('Skills.Lang.Items')"
+          :key="idx"
+          :class="{ 'full-flexing': $t('Skills.Lang.Type') != 'inline' }"
+        >
+          <!-- {{item.title}}: {{item.description}} -->
 
-            <span class="ititem-title">{{ item.title }}</span>
-            <span class="ititem-connector" v-if="item.description != null"
-              >:</span
-            >
-            <span class="ititem-description" v-if="item.description != null" v-html="item.description"></span>
-            <!-- the ending -->
-            <div
-              class="it-itemending"
-              v-if="type.Type == 'inline' && type.Content.length != idx + 1"
-            >
-              ,
-            </div>
+          <span class="langitem-title">{{ item.title }}</span>
+          <span class="langitem-connector" v-if="item.description != null"
+            >:</span
+          >
+          <span
+            class="langitem-description"
+            v-if="item.description != null"
+            v-html="item.description"
+          ></span>
+          <!-- the ending -->
+          <div
+            class="lang-itemending"
+            v-if="
+              $t('Skills.Lang.Type') == 'inline' &&
+              $t('Skills.Lang.Items').length != idx + 1
+            "
+          >
+            ,
           </div>
         </div>
       </div>
     </div>
-
   </div>
+
+  <!-- </div> -->
   <!-- </div> -->
   <!-- </div> -->
 </template>
@@ -47,7 +46,7 @@
 import InnerHeader from "@/components/InnerHeader";
 
 export default {
-  name: "it",
+  name: "lang",
   data() {
     return {
       // connector: ` `,
@@ -80,40 +79,37 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.it-content {
+.lang-content {
   background-color: lightseagreen;
 
-  .it-types {
-    background-color: lightpink;
-
-    .it-container {
+    .lang-container {
       background-color: rgb(164, 19, 184);
       display: flex;
       flex: 1 1 100%;
       flex-wrap: wrap;
 
-      .it-item {
+      .lang-item {
         background-color: rgb(196, 246, 255);
         margin-top: 0.05cm;
         margin-bottom: 0.05cm;
         display: flex;
       }
 
-      .ititem-title {
+      .langitem-title {
         background-color: rgb(196, 246, 255);
       }
-      .ititem-connector {
+      .langitem-connector {
         background-color: rgb(51, 50, 58);
         margin-right: 4px;
       }
-      .ititem-description {
+      .langitem-description {
         background-color: rgb(2, 145, 170);
       }
 
-      .it-itemending {
+
+      .lang-itemending {
         background-color: rgb(255, 196, 237);
         margin-right: 4px;
-
       }
 
       .full-flexing {
@@ -121,9 +117,6 @@ export default {
         flex: 1 1 100%;
       }
     }
-  }
   
 }
-
-
 </style>
