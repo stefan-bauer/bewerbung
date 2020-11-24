@@ -27,3 +27,4 @@ pnpm-debug.log*
 /src/assets/images/persona/*
 /src/locales/de.js
 /src/locales/en.js
+/PdfOutput/*
