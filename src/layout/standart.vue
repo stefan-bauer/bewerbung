@@ -33,52 +33,40 @@ export default {
     middlecfPage: () => import("@/views/certification/MiddleCertification"),
     lowcfPage: () => import("@/views/certification/LowCertification"),
     lowcfDbpage: () => import("@/views/certificationDouble/LowCertification"),
-    // Page: () => import("@/views/title/Index"),
   },
 };
 </script>
 
 <style lang="scss" scoped>
 .page {
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap; /* | wrap | wrap-reverse; */
-  justify-content: flex-start;
-  align-items: stretch;
-  // flex-wrap: wrap;
+  background-color: lightblue;
+  
+  // background-color: white;
+  // display: flex;
+  // flex-direction: row;
+  // flex-wrap: nowrap; /* | wrap | wrap-reverse; */
+  // justify-content: flex-start;
+  // align-items: stretch;
 }
 
 .page[data-size="A4"] {
-  width: 21cm;
-  height: 29.7cm;
+  // width: 21cm;
+  // height: 29.7cm;
 }
 
 .container-drawer {
-  background-color: $color-drawer-background;
-  // flex-basis: 7cm;
-  flex:1 1 7cm;
-  // align-items: center;
-  // border:2px black solid;
+  background-color: green;
+  // background-color: $color-drawer-background;
+  // flex:1 1 7cm;
+
 }
 
 .container-content {
-  // background-color: white;
   background-color: rgb(179, 3, 3);
-  display: flex;
-  // flex-wrap:wrap;
-  // align-items: stretch;
-  flex:1 1 14cm;
-  // justify-items: center;
-  // background-color: rgba(202, 7, 160, 0.726);
-  // flex-basis: 14cm;
-  // border:2px rgb(5, 27, 148) solid;
-  // padding-bottom: 1cm;
-  padding-left: 0.5cm;
-  padding-right: 0.5cm;
-  // flex-basis: inherit;
-
-  // min-width:100%;
-  // max-width:100%;
+  // background-color: white;
+  // display: flex;
+  // flex:1 1 14cm;
+  // padding-left: 0.5cm;
+  // padding-right: 0.5cm;
 }
 </style>
