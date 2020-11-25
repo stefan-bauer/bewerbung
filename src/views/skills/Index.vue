@@ -57,7 +57,7 @@ export default {
 /deep/ h4 {
   // background-color: rgba(241, 110, 110, 0.596);
   text-transform: uppercase;
-  font-family: Raleway !important;
+  font-family: Raleway;
   font-size: 11pt;
   font-style: normal;
 

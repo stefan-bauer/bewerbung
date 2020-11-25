@@ -75,12 +75,12 @@ $margin-section-bottom:0.6cm;
   color: $color-darkest;
 }
 /deep/ h4 {
-  background-color: rgb(61, 4, 4);
-  // flex: 2 2 auto;
-  // // -webkit-flex: 2 2 auto;
-  // font-size: 10pt;
-  // font-weight: bold;
-  // color: $color-worktable-heading;
+  // background-color: rgb(61, 4, 4);
+  text-transform: uppercase;
+  font-family: Raleway;
+  font-size: 11pt;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .cv-content {
@@ -120,7 +120,7 @@ $margin-section-bottom:0.6cm;
       margin-bottom:$margin-section-bottom;
     }
     .publicated {
-      background-color: lightcoral;
+      // background-color: lightcoral;
       flex: 0 0 100%;
       margin-bottom:$margin-section-bottom;
     }

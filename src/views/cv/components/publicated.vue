@@ -10,7 +10,9 @@
         v-for="(type, outeridx) in $t('Cv.Publicated.Types')"
         :key="outeridx"
       >
-        <div class="publicated-type"><h4>{{ type.Header }}</h4></div>
+        <div class="publicated-type">
+          <h4>{{ type.Header }}</h4>
+        </div>
         <div
           class="publicated-items"
           v-for="(item, idx) in type.Items"
@@ -57,52 +59,57 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.publicated-content {
+  // background-color: lightseagreen;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: $margin-content-left;
+  flex: 0 0 100%;
 
+  .publicated-types {
+    // background-color: rgb(74, 55, 95);
 
-  .publicated-content {
-    background-color: lightseagreen;
+    .publicated-type {
+      // background-color: rgb(0, 231, 216);
+      padding-bottom: 0.2cm;
+    }
 
-    .publicated-types {
-      background-color: rgb(74, 55, 95);
+    .publicated-items {
+      // background-color: rgb(227, 236, 219);
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: $margin-inner-content-left;
 
-      .publicated-type {
-        background-color: rgb(55, 95, 92);
-        padding-bottom: 0.2cm;
-      }
-
-      .publicated-items {
-        background-color: rgb(74, 95, 55);
-        display: flex;
+      .publicated-item {
+        // background-color: rgb(95, 55, 78);
+        flex: 0 0 100%;
         flex-wrap: wrap;
-        flex-basis: inherit;
-        margin-left: $margin-content-left;
+        display: flex;
+        margin-bottom: 0.1cm;
 
-        .publicated-item {
-          background-color: rgb(95, 55, 78);
-          flex: 1 1 100%;
-          flex-wrap: wrap;
-          display: flex;
-          margin-bottom: 0.1cm;
+        .publicated-header {
+          // background-color: rgb(55, 95, 92);
+          flex: 1 0 70%;
+        }
 
-          .publicated-header {
-            background-color: rgb(55, 95, 92);
-            flex: 1 1 80%;
-          }
+        .publicated-subheader {
+          // background-color: rgb(165, 115, 100);
+          flex: 0 0 100%;
+        }
 
-          .publicated-subheader {
-            background-color: rgb(165, 115, 100);
-          }
+        .publicated-date {
+          // background-color: rgb(95, 55, 55);
+          font-size: 9pt;
+          color: $color-worktable-date;
+          text-align: right;
+        }
 
-          .publicated-date {
-            background-color: rgb(95, 55, 55);
-          }
-
-          .publicated-author {
-            background-color: rgb(55, 58, 95);
-          }
+        .publicated-author {
+          // background-color: rgb(55, 58, 95);
+          font-style: italic;
         }
       }
     }
   }
-
+}
 </style>
