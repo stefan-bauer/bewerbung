@@ -1,13 +1,12 @@
 <template>
   <div class="letter-container">
-    <!-- <div class="test-spacer-1"></div> -->
-    tset teset ateset
+    <div class="test-spacer-1">EINS</div>
     <!-- <page-header  :subheader="subheader">
       <template v-slot:header>{{ $t("letter.pageHeader") }}</template>
       <template v-slot:subheader>{{ $t("letter.hiddenHeader") }}</template>
     </page-header> -->
     <div class="middle">
-    <!-- <div class="test-spacer-2"></div> -->
+      <div class="test-spacer-2">ZWEI</div>
 
       <!-- <div class="date">
         {{ $t("letter.date") }}
@@ -40,7 +39,7 @@
         </div>
       </div> -->
     </div>
-    <!-- <div class="footer"></div> -->
+    <div class="footer">DREI</div>
   </div>
 </template>
 
@@ -69,10 +68,7 @@ export default {
       let result = text.match(matchTag);
 
       return result;
-
     },
-
-    
   },
 };
 </script>
@@ -80,20 +76,26 @@ export default {
 <style lang="scss" scoped>
 .letter-container {
   background-color: aquamarine;
-  flex:0 0 100%;
+  flex: 0 0 100%;
   height: 100%;
-  // display: flex;
+  // ---------------------
+  // passt soweit ganz gut
+  // ---------------------
 
 
-
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
   // padding:0.5cm;
 
   // align-content: stretch;
 
-  .test-spacer-1{
+  .test-spacer-1 {
     background-color: rgb(1, 77, 51);
     min-width: 5cm;
     min-height: 4cm;
+  flex: 0 0 100%;
+  
     // max-height: 4cm;
   }
   // // align-self: center;
@@ -105,19 +107,19 @@ export default {
   // // // justify-content: space-around;
   // // align-content: flex-end;
 
-.header-container{
-  background-color:pink;
-}
-
+  .header-container {
+    background-color: pink;
+  }
 
   .middle {
     background-color: orange;
+      flex: 0 0 100%;
 
-        .test-spacer-2{
-          background-color: rgb(1, 2, 77);
-              min-width: 5cm;
-    min-height: 4cm;
-        }
+    .test-spacer-2 {
+      background-color: rgb(1, 2, 77);
+      min-width: 5cm;
+      min-height: 4cm;
+    }
     // // display: flex;
     // flex:1 1 100%;
     .date {
@@ -159,14 +161,12 @@ export default {
       // font-size: 11pt;
       // line-height: 1.3;
 
-
       p {
         // // background-color: rgb(244, 127, 255);
         // margin-bottom: 0.5cm;
         // // flex: 1 1 100%;
         // // color: red;
       }
-
     }
 
     .letter-ending {
@@ -195,8 +195,9 @@ export default {
   }
   .footer {
     background-color: rgb(222, 135, 171);
-        min-width: 5cm;
+    min-width: 5cm;
     min-height: 4cm;
+    flex: 0 0 100%;
     // height: 1.2cm;
     // margin-left:1cm;
     // margin-right:1cm;
