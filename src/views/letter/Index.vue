@@ -1,11 +1,14 @@
 <template>
   <div class="letter-container">
-    <page-header  :subheader="subheader">
+    <div class="test-spacer-1"></div>
+    <!-- <page-header  :subheader="subheader">
       <template v-slot:header>{{ $t("letter.pageHeader") }}</template>
       <template v-slot:subheader>{{ $t("letter.hiddenHeader") }}</template>
-    </page-header>
+    </page-header> -->
     <div class="middle">
-      <div class="date">
+    <div class="test-spacer-2"></div>
+
+      <!-- <div class="date">
         {{ $t("letter.date") }}
       </div>
       <div class="subject">
@@ -34,14 +37,14 @@
             class="signing-image"
           />
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="footer"></div>
   </div>
 </template>
 
 <script>
-import PageHeader from "@/components/Header";
+// import PageHeader from "@/components/Header";
 export default {
   name: "letterLayout",
   data() {
@@ -54,7 +57,7 @@ export default {
     };
   },
   components: {
-    PageHeader,
+    // PageHeader,
   },
   methods: {
     setAltImg(event) {
@@ -76,6 +79,13 @@ export default {
 <style lang="scss" scoped>
 .letter-container {
   background-color: aquamarine;
+
+  .test-spacer-1{
+    background-color: rgb(1, 77, 51);
+    min-width: 5cm;
+    min-height: 4cm;
+    // max-height: 4cm;
+  }
   // // align-self: center;
   // display: flex;
   // // align-items: center;
@@ -92,6 +102,12 @@ export default {
 
   .middle {
     background-color: orange;
+
+        .test-spacer-2{
+          background-color: rgb(1, 2, 77);
+              min-width: 5cm;
+    min-height: 4cm;
+        }
     // // display: flex;
     // flex:1 1 100%;
     .date {
@@ -168,7 +184,9 @@ export default {
     }
   }
   .footer {
-    background-color: rgb(135, 190, 222);
+    background-color: rgb(222, 135, 171);
+        min-width: 5cm;
+    min-height: 4cm;
     // height: 1.2cm;
     // margin-left:1cm;
     // margin-right:1cm;

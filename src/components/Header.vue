@@ -31,6 +31,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+$color-title-line:$gray-middle;
+
 $heigt-spacer-top: 1cm;
 // $heigt-spacer-top: .75cm;
 $heigt-spacer-bottom: 0.25cm;

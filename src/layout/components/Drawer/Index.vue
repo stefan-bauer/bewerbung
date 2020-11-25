@@ -1,6 +1,6 @@
 <template>
   <div class="drawer">
-    <div class="header"></div>
+    <div class="spacer-header"></div>
 
     <div class="avatar">
       <img :src="source" @error="setAltImg" alt="Avatar" class="avatar-image" />
@@ -79,53 +79,56 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$avatar-boarder: $gray-light;
+$drawer-content: $gray-light;
 .drawer {
-    background-color: rgb(20, 117, 117);
+  background-color: rgb(20, 117, 117);
+  
   // line-height: 1.3;
 
-  .header {
-    //   background-color: rgb(20, 117, 117);
+  .spacer-header {
+    background-color: rgb(57, 20, 117);
 
-    // min-height: 3cm;
-    // max-height: 3cm;
+    min-height: 3cm;
+    max-height: 3cm;
   }
 
   .avatar {
-      // background-color: rgb(20, 117, 117);
+    // background-color: rgb(20, 117, 117);
 
     text-align: center;
 
     &-image {
-      border: 2px solid $color-drawer-avatarboarder;
+      border: 2px solid $avatar-boarder;
       border-radius: 100%;
       width: 80%;
     }
   }
 
   .name {
-    //   background-color: rgb(20, 117, 117);
+    background-color: rgb(20, 51, 117);
 
-    // margin-top: 0.5cm;
-    // text-align: left;
-    // color: $color-drawer-content;
-    // font-family: Raleway;
-    // font-size: 14pt;
-    // font-weight: bold;
-    // margin-left: 0.75cm;
+    margin-top: 0.5cm;
+    text-align: left;
+    color: $drawer-content;
+    font-family: Raleway;
+    font-size: 14pt;
+    font-weight: bold;
+    margin-left: 0.75cm;
 
     &-title {
     }
     &-first {
     }
     &-sir {
-      // text-transform: uppercase;
+      text-transform: uppercase;
     }
   }
 
   .contact-container {
-    // background-color: rgb(20, 117, 117);
+    background-color: rgb(117, 20, 117);
 
-    // margin: 1.5cm 0 0 0.75cm;
+    margin: 1.5cm 0 0 0.75cm;
 
     .flexrow {
       // display: flex;
@@ -159,7 +162,6 @@ export default {
     }
 
     .contact {
-
       &-heading {
         // color: $color-drawer-heading;
         // font-family: Raleway;

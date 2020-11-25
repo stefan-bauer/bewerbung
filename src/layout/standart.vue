@@ -7,13 +7,13 @@
       </div>
       <div class="container-content">
         <letter-page v-if="content=='letter'"></letter-page>
-        <title-page v-if="content=='title'"></title-page>
-        <cv-page v-if="content=='cv'"></cv-page>
-        <skills-page v-if="content=='skills'"></skills-page>
-        <highcf-page v-if="content=='hightCertification'"></highcf-page>
-        <middlecf-page v-if="content=='middleCertification'"></middlecf-page>
-        <lowcf-page v-if="content=='lowCertification'"></lowcf-page>
-        <lowcf-dbpage v-if="content=='lowCertificationDouble'"></lowcf-dbpage>
+        <!-- <title-page v-if="content=='title'"></title-page> -->
+        <!-- <cv-page v-if="content=='cv'"></cv-page> -->
+        <!-- <skills-page v-if="content=='skills'"></skills-page> -->
+        <!-- <highcf-page v-if="content=='hightCertification'"></highcf-page> -->
+        <!-- <middlecf-page v-if="content=='middleCertification'"></middlecf-page> -->
+        <!-- <lowcf-page v-if="content=='lowCertification'"></lowcf-page> -->
+        <!-- <lowcf-dbpage v-if="content=='lowCertificationDouble'"></lowcf-dbpage> -->
       </div>
     </div>
   </div>
@@ -26,13 +26,13 @@ export default {
   components: {
     MyDrawer: () => import("./components/Drawer/Index"),
     LetterPage: () => import("@/views/letter/Index"),
-    TitlePage: () => import("@/views/title/Index"),
-    CvPage: () => import("@/views/cv/Index"),
-    SkillsPage: () => import("@/views/skills/Index"),
-    highcfPage: () => import("@/views/certification/HighCertification"),
-    middlecfPage: () => import("@/views/certification/MiddleCertification"),
-    lowcfPage: () => import("@/views/certification/LowCertification"),
-    lowcfDbpage: () => import("@/views/certificationDouble/LowCertification"),
+    // TitlePage: () => import("@/views/title/Index"),
+    // CvPage: () => import("@/views/cv/Index"),
+    // SkillsPage: () => import("@/views/skills/Index"),
+    // highcfPage: () => import("@/views/certification/HighCertification"),
+    // middlecfPage: () => import("@/views/certification/MiddleCertification"),
+    // lowcfPage: () => import("@/views/certification/LowCertification"),
+    // lowcfDbpage: () => import("@/views/certificationDouble/LowCertification"),
   },
 };
 </script>
@@ -63,6 +63,7 @@ export default {
 
 .container-content {
   background-color: rgb(179, 3, 3);
+    // flex:0 0 14cm;
   // background-color: white;
   // display: flex;
   // flex:1 1 14cm;
