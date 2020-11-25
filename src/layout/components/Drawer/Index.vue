@@ -91,14 +91,14 @@ export default {
   }
 
   .avatar {
-    //   background-color: rgb(20, 117, 117);
+      // background-color: rgb(20, 117, 117);
 
-    // text-align: center;
+    text-align: center;
 
     &-image {
-      // border: 2px solid $color-drawer-avatarboarder;
-      // border-radius: 100%;
-      // width: 80%;
+      border: 2px solid $color-drawer-avatarboarder;
+      border-radius: 100%;
+      width: 80%;
     }
   }
 

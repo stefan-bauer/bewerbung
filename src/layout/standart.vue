@@ -40,9 +40,9 @@ export default {
 <style lang="scss" scoped>
 .page {
   background-color: lightblue;
+  display: flex;
   
   // background-color: white;
-  // display: flex;
   // flex-direction: row;
   // flex-wrap: nowrap; /* | wrap | wrap-reverse; */
   // justify-content: flex-start;
@@ -50,8 +50,8 @@ export default {
 }
 
 .page[data-size="A4"] {
-  // width: 21cm;
-  // height: 29.7cm;
+  width: 21cm;
+  height: 29.7cm;
 }
 
 .container-drawer {

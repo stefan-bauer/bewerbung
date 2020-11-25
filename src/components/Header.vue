@@ -37,21 +37,13 @@ $heigt-spacer-bottom: 0.25cm;
 
 h2 {
   // background-color: cyan;
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 28pt;
-  // color: blue;
-  color: $color-title;
+  // font-family: Raleway;
+  // font-weight: bold;
+  // font-size: 28pt;
+  // // color: blue;
+  // color: $color-title;
 }
 
-// .h2 {
-//   // background-color: cyan;
-//   font-family: Raleway;
-//   font-weight: bold;
-//   font-size: 28pt;
-//   // color: blue;
-//   color: $color-title;
-// }
 
 h1 {
   font-size: 1pt;
@@ -60,25 +52,25 @@ h1 {
 
 .header-container {
 //   background-color: rgb(36, 216, 207);
-  //   text-align: center;
-  //   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex:1 1 100%;
+  // //   text-align: center;
+  // //   margin: 0 auto;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // flex:1 1 100%;
 
   .spacer {
     // background-color: rgb(240, 127, 255);
-    width: 100%;
-    height: 0.25cm;
+    // width: 100%;
+    // height: 0.25cm;
 
     &-top {
     //   background-color: rgb(127, 255, 155);
-      height: $heigt-spacer-top;
+      // height: $heigt-spacer-top;
     }
     &-bottom {
     //   background-color: rgb(241, 109, 91);
-      height: $heigt-spacer-bottom;
+      // height: $heigt-spacer-bottom;
     }
   }
 
@@ -87,37 +79,37 @@ h1 {
 
     .header {
     //   background-color: rgb(195, 0, 255);
-      font-family: Raleway;
-      font-weight: bold;
-      font-size: 28pt;
-      // color: blue;
-      color: $color-title;
+      // font-family: Raleway;
+      // font-weight: bold;
+      // font-size: 28pt;
+      // // color: blue;
+      // color: $color-title;
     }
 
     .line {
       background-color: $color-title-line;
-      width: 75%;
-      min-height: $line-hight-small;
-      max-height: $line-hight-small;
-      // margin: 0 auto;
-      margin-top: 0.25cm;
+      // width: 75%;
+      // min-height: $line-hight-small;
+      // max-height: $line-hight-small;
+      // // margin: 0 auto;
+      // margin-top: 0.25cm;
     }
   }
 
   .subheader {
     // background-color: rgb(59, 79, 192);
-    flex: 1 1 100%;
-    text-align: center;
-    margin-top: 0.25cm;
-    font-family: Raleway;
-    font-size: 14pt;
-    color: $color-subtitle;
+    // flex: 1 1 100%;
+    // text-align: center;
+    // margin-top: 0.25cm;
+    // font-family: Raleway;
+    // font-size: 14pt;
+    // color: $color-subtitle;
 
   }
   .subheader-hiddentitle {
     // background-color: rgb(59, 79, 192);
-    flex: 1 1 100%;
-    text-align: center;
+    // flex: 1 1 100%;
+    // text-align: center;
   }
 }
 </style>
