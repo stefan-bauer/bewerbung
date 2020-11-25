@@ -1,10 +1,10 @@
 <template>
   <div class="letter-container">
-    <div class="test-spacer-1">EINS</div>
-    <!-- <page-header  :subheader="subheader">
+    <!-- <div class="test-spacer-1">EINS</div> -->
+    <page-header  :subheader="subheader">
       <template v-slot:header>{{ $t("letter.pageHeader") }}</template>
       <template v-slot:subheader>{{ $t("letter.hiddenHeader") }}</template>
-    </page-header> -->
+    </page-header>
     <div class="middle">
       <div class="test-spacer-2">ZWEI</div>
 
@@ -44,20 +44,20 @@
 </template>
 
 <script>
-// import PageHeader from "@/components/Header";
+import PageHeader from "@/components/Header";
 export default {
   name: "letterLayout",
   data() {
     return {
       source: `images/persona/${this.$t("letter.signingImg")}`,
       subheader: {
-        hiddentitle: true,
+        hiddentitle: false,
         active: true,
       },
     };
   },
   components: {
-    // PageHeader,
+    PageHeader,
   },
   methods: {
     setAltImg(event) {
@@ -78,26 +78,26 @@ export default {
   background-color: aquamarine;
   flex: 0 0 100%;
   height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
   // ---------------------
   // passt soweit ganz gut
   // ---------------------
 
 
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
   // padding:0.5cm;
 
   // align-content: stretch;
 
-  .test-spacer-1 {
-    background-color: rgb(1, 77, 51);
-    min-width: 5cm;
-    min-height: 4cm;
-  flex: 0 0 100%;
+  // .test-spacer-1 {
+  //   background-color: rgb(1, 77, 51);
+  //   min-width: 5cm;
+  //   min-height: 4cm;
+  // flex: 0 0 100%;
   
-    // max-height: 4cm;
-  }
+  //   // max-height: 4cm;
+  // }
   // // align-self: center;
   // display: flex;
   // // align-items: center;
@@ -109,6 +109,7 @@ export default {
 
   .header-container {
     background-color: pink;
+      flex: 0 0 100%;
   }
 
   .middle {
