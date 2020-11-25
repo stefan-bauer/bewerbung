@@ -85,7 +85,7 @@ export default {
 
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around;
+  align-content: space-between;
   // padding:0.5cm;
 
   // align-content: stretch;
