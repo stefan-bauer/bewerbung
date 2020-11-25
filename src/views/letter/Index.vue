@@ -129,45 +129,45 @@ export default {
     .date {
       // background-color: red;
       // // flex: 1 1 100%;
-      // font-family: 'Open Sans';
-      // font-size: 10pt;
-      // color: black;
-      // font-weight: bold;
-      // margin-bottom: 0.5cm;
+      font-family: 'Open Sans';
+      font-size: 10pt;
+      color: black;
+      font-weight: bold;
+      margin-bottom: 0.5cm;
     }
 
     .subject {
       // background-color: rgb(255, 127, 217);
       // // flex: 1 1 100%;
 
-      // font-family: Carlito;
-      // font-size: 10pt;
-      // color: black;
+      font-family: Carlito;
+      font-size: 10pt;
+      color: black;
       // // font-weight: bold;
       // text-transform: uppercase;
-      // margin-bottom: 1.5cm;
+      margin-bottom: 1.5cm;
     }
     .salutation {
       // background-color: rgb(173, 247, 179);
-      // margin-bottom: 0.75cm;
+      margin-bottom: 0.75cm;
       // // flex: 1 1 100%;
 
-      // font-family: Carlito;
-      // font-size: 10pt;
-      // color: black;
-      // font-weight: bold;
+      font-family: Carlito;
+      font-size: 10pt;
+      color: black;
+      font-weight: bold;
     }
 
     .letter {
       // background-color: rgb(244, 127, 255);
-      // font-family: Carlito;
+      font-family: Carlito;
       // // flex: 1 1 100%;
-      // font-size: 11pt;
-      // line-height: 1.3;
+      font-size: 11pt;
+      line-height: 1.3;
 
       p {
         // // background-color: rgb(244, 127, 255);
-        // margin-bottom: 0.5cm;
+        margin-bottom: 0.5cm;
         // // flex: 1 1 100%;
         // // color: red;
       }
@@ -185,7 +185,7 @@ export default {
       .signing-name {
         // background-color: lightcoral;
         // // flex: 1 1 100%;
-        // margin-bottom: 0.5cm;
+        margin-bottom: 0.5cm;
       }
 
       .signing-image {
@@ -200,7 +200,7 @@ export default {
   .footer {
     background-color: rgb(222, 135, 171);
     min-width: 5cm;
-    min-height: 4cm;
+    min-height: 2cm;
     flex: 0 0 100%;
     // height: 1.2cm;
     // margin-left:1cm;
