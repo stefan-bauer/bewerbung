@@ -80,7 +80,7 @@ export default {
 
 <style lang="scss" scoped>
 .drawer {
-  //   background-color: rgb(20, 117, 117);
+    background-color: rgb(20, 117, 117);
   // line-height: 1.3;
 
   .header {

@@ -57,7 +57,7 @@ export default {
 .container-drawer {
   background-color: green;
   // background-color: $color-drawer-background;
-  // flex:1 1 7cm;
+  flex:0 0 7cm;
 
 }
 
