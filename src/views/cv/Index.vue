@@ -70,9 +70,7 @@ $margin-section-bottom:0.75cm;
 // $item-padding-bottom: 0.2cm;
 
 /deep/ h5 {
-  background-color: rgb(218, 24, 24);
-  flex: 2 2 auto;
-  // -webkit-flex: 2 2 auto;
+  // background-color: rgb(218, 24, 24);
   font-size: 10pt;
   font-weight: bold;
   color: $color-darkest;
@@ -87,7 +85,7 @@ $margin-section-bottom:0.75cm;
 }
 
 .cv-content {
-  background-color: aqua;
+  // background-color: aqua;
   flex: 0 0 100%;
   height: 100%;
   display: flex;
@@ -101,7 +99,7 @@ $margin-section-bottom:0.75cm;
   }
 
   .middle {
-    background-color: rgb(228, 185, 245);
+    // background-color: rgb(228, 185, 245);
       display:flex;
       flex-wrap:wrap;
       
@@ -113,7 +111,7 @@ $margin-section-bottom:0.75cm;
     }
 
     .work {
-      background-color: lightcoral;
+      // background-color: lightcoral;
       flex: 0 0 100%;
       margin-bottom:$margin-section-bottom;
     }

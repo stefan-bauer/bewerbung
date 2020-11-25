@@ -41,8 +41,8 @@ export default {
 $color-drawer-background: $blue-dark-2;
 
 .page {
-  background-color: lightblue;
-  // background-color: white;
+  // background-color: lightblue;
+  background-color: white;
   display: flex;
   justify-items: stretch;
 }

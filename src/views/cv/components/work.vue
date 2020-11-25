@@ -50,44 +50,41 @@ export default {
 
 <style lang="scss" scoped>
 .work-content {
-  background-color: lightseagreen;
+  // background-color: lightseagreen;
   display: flex;
   flex-wrap: wrap;
   flex-basis: inherit;
-  flex: 1 1 100%;
 
   margin-left: $margin-content-left;
 
   .work-items {
+    // background-color: lightpink;
     display: flex;
     flex-wrap: wrap;
-    // flex-basis: inherit;
-    flex: 1 1 100%;
+    flex: 0 0 100%;
 
-    background-color: lightpink;
 
     .work-item {
-      background-color: limegreen;
-      // flex-basis: inherit;
-      flex: 1 1 100%;
+      // background-color: limegreen;
+      flex: 0 0 100%;
       flex-wrap: wrap;
       display: flex;
 
-      padding-bottom: 0.1cm;
+      // padding-bottom: 0.1cm;/* not important, because there is only one item */
 
       .work-header {
-        background-color: rgb(107, 151, 107);
-        flex: 1 1 50%;
+        // background-color: rgb(107, 151, 107);
+        flex: 1 0 50%;
       }
 
       .work-date {
-        background-color: rgb(106, 161, 165);
+        // background-color: rgb(106, 161, 165);
         text-align: right;
       }
 
       .work-description {
-        background-color: rgb(238, 154, 115);
-        flex: 1 1 100%;
+        // background-color: rgb(238, 154, 115);
+        flex: 0 0 100%;
       }
     }
   }
