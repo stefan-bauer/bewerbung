@@ -41,7 +41,7 @@
 
 
     </div>
-    <div class="footer">DREI</div>
+    <div class="footer"></div>
   </div>
 </template>
 
@@ -77,58 +77,25 @@ export default {
 
 <style lang="scss" scoped>
 .letter-container {
-  background-color: aquamarine;
+  // background-color: aquamarine;
   flex: 0 0 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-content: space-between;
-  // ---------------------
-  // passt soweit ganz gut
-  // ---------------------
-
-
-  // padding:0.5cm;
-
-  // align-content: stretch;
-
-  // .test-spacer-1 {
-  //   background-color: rgb(1, 77, 51);
-  //   min-width: 5cm;
-  //   min-height: 4cm;
-  // flex: 0 0 100%;
-  
-  //   // max-height: 4cm;
-  // }
-  // // align-self: center;
-  // display: flex;
-  // // align-items: center;
-  // flex-wrap: wrap;
-  // // flex:1 1 100%;
-  // // flex-basis: inherit;
-  // // // justify-content: space-around;
-  // // align-content: flex-end;
 
   .header-container {
-    background-color: pink;
+    // background-color: pink;
       flex: 0 0 100%;
   }
 
   .middle {
-    background-color: orange;
+    // background-color: orange;
       flex: 0 0 100%;
       line-height: 1.2;
 
-    // .test-spacer-2 {
-    //   background-color: rgb(1, 2, 77);
-    //   min-width: 5cm;
-    //   min-height: 4cm;
-    // }
-    // // display: flex;
-    // flex:1 1 100%;
     .date {
-      // background-color: red;
-      // // flex: 1 1 100%;
+      // background-color: rgb(255, 127, 217);
       font-family: 'Open Sans';
       font-size: 10pt;
       color: black;
@@ -138,8 +105,6 @@ export default {
 
     .subject {
       // background-color: rgb(255, 127, 217);
-      // // flex: 1 1 100%;
-
       font-family: Carlito;
       font-size: 10pt;
       color: black;
@@ -147,11 +112,10 @@ export default {
       // text-transform: uppercase;
       margin-bottom: 1.5cm;
     }
+
     .salutation {
       // background-color: rgb(173, 247, 179);
       margin-bottom: 0.75cm;
-      // // flex: 1 1 100%;
-
       font-family: Carlito;
       font-size: 10pt;
       color: black;
@@ -161,35 +125,25 @@ export default {
     .letter {
       // background-color: rgb(244, 127, 255);
       font-family: Carlito;
-      // // flex: 1 1 100%;
       font-size: 11pt;
       line-height: 1.3;
 
       p {
         // // background-color: rgb(244, 127, 255);
         margin-bottom: 0.5cm;
-        // // flex: 1 1 100%;
-        // // color: red;
       }
     }
 
     .letter-ending {
       // background-color: lightseagreen;
-      // flex: 1 1 100%;
-
-      p {
-        // background-color: rgb(127, 219, 255);
-        // flex: 1 1 100%;
-      }
 
       .signing-name {
         // background-color: lightcoral;
-        // // flex: 1 1 100%;
         margin-bottom: 0.5cm;
       }
 
       .signing-image {
-        background-color: brown;
+        // background-color: brown;
         width: 30%;
         color: white;
         flex: 0 0 100%;
@@ -198,14 +152,10 @@ export default {
     }
   }
   .footer {
-    background-color: rgb(222, 135, 171);
+    // background-color: rgb(222, 135, 171);
     min-width: 5cm;
-    min-height: 2cm;
+    min-height: 1px;
     flex: 0 0 100%;
-    // height: 1.2cm;
-    // margin-left:1cm;
-    // margin-right:1cm;
-    // flex: 1 1 100%;
   }
 }
 </style>

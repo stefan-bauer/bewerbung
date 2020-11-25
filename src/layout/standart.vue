@@ -7,7 +7,7 @@
       </div>
       <div class="container-content">
         <letter-page v-if="content=='letter'"></letter-page>
-        <!-- <title-page v-if="content=='title'"></title-page> -->
+        <title-page v-if="content=='title'"></title-page>
         <!-- <cv-page v-if="content=='cv'"></cv-page> -->
         <!-- <skills-page v-if="content=='skills'"></skills-page> -->
         <!-- <highcf-page v-if="content=='hightCertification'"></highcf-page> -->
@@ -26,7 +26,7 @@ export default {
   components: {
     MyDrawer: () => import("./components/Drawer/Index"),
     LetterPage: () => import("@/views/letter/Index"),
-    // TitlePage: () => import("@/views/title/Index"),
+    TitlePage: () => import("@/views/title/Index"),
     // CvPage: () => import("@/views/cv/Index"),
     // SkillsPage: () => import("@/views/skills/Index"),
     // highcfPage: () => import("@/views/certification/HighCertification"),

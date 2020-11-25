@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="title-content">
     <page-header class="page-header" :subheader="subheader">
       <template v-slot:header>{{ $t("titlePage.pageHeader") }}</template>
     </page-header>
@@ -69,21 +69,22 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.content {
+.title-content {
   // background-color: rgba(71, 207, 8, 0.726);
+  flex: 0 0 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex: 1 1 100%;
   align-content: space-between;
 
   .page-header {
-    flex: 1 1 100%;
+    flex: 0 0 100%;
   }
 
   .middle {
     // background-color: green;s
     // flex-grow: 10;
-    flex-basis: inherit;
+    flex: 0 0 100%;
     text-align: center;
 
     h1 {
@@ -94,7 +95,7 @@ export default {
   .footer {
     // background-color: blueviolet;
     margin-bottom: 2cm;
-    flex-basis: inherit;
+    flex: 0 0 100%;
 
     .table_of_content {
       // display:none;
