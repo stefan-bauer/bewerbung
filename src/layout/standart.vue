@@ -43,7 +43,7 @@ $color-drawer-background: $blue-dark-2;
 .page {
   background-color: lightblue;
   display: flex;
-  
+  justify-items: stretch;
   // background-color: white;
   // flex-direction: row;
   // flex-wrap: nowrap; /* | wrap | wrap-reverse; */

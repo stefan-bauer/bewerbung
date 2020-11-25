@@ -80,10 +80,11 @@ export default {
 <style lang="scss" scoped>
 .letter-container {
   background-color: aquamarine;
-  padding:0.5cm;
-
   display: flex;
   flex:0 0 100%;
+  height: 100%;
+  // padding:0.5cm;
+
   // align-content: stretch;
 
   .test-spacer-1{
