@@ -6,9 +6,9 @@
       <template v-slot:subheader>{{ $t("letter.hiddenHeader") }}</template>
     </page-header>
     <div class="middle">
-      <div class="test-spacer-2">ZWEI</div>
+      <!-- <div class="test-spacer-2">ZWEI</div> -->
 
-      <!-- <div class="date">
+      <div class="date">
         {{ $t("letter.date") }}
       </div>
       <div class="subject">
@@ -37,7 +37,9 @@
             class="signing-image"
           />
         </div>
-      </div> -->
+      </div>
+
+
     </div>
     <div class="footer">DREI</div>
   </div>
@@ -115,12 +117,13 @@ export default {
   .middle {
     background-color: orange;
       flex: 0 0 100%;
+      line-height: 1.2;
 
-    .test-spacer-2 {
-      background-color: rgb(1, 2, 77);
-      min-width: 5cm;
-      min-height: 4cm;
-    }
+    // .test-spacer-2 {
+    //   background-color: rgb(1, 2, 77);
+    //   min-width: 5cm;
+    //   min-height: 4cm;
+    // }
     // // display: flex;
     // flex:1 1 100%;
     .date {
@@ -186,11 +189,11 @@ export default {
       }
 
       .signing-image {
-        // background-color: brown;
-        // width: 30%;
-        // color: white;
-        // flex: 1 1 100%;
-        // margin-left: 0.25cm;
+        background-color: brown;
+        width: 30%;
+        color: white;
+        flex: 0 0 100%;
+        margin-left: 0.25cm;
       }
     }
   }
