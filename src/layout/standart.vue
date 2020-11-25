@@ -8,7 +8,7 @@
       <div class="container-content">
         <letter-page v-if="content=='letter'"></letter-page>
         <title-page v-if="content=='title'"></title-page>
-        <!-- <cv-page v-if="content=='cv'"></cv-page> -->
+        <cv-page v-if="content=='cv'"></cv-page>
         <!-- <skills-page v-if="content=='skills'"></skills-page> -->
         <!-- <highcf-page v-if="content=='hightCertification'"></highcf-page> -->
         <!-- <middlecf-page v-if="content=='middleCertification'"></middlecf-page> -->
@@ -27,7 +27,7 @@ export default {
     MyDrawer: () => import("./components/Drawer/Index"),
     LetterPage: () => import("@/views/letter/Index"),
     TitlePage: () => import("@/views/title/Index"),
-    // CvPage: () => import("@/views/cv/Index"),
+    CvPage: () => import("@/views/cv/Index"),
     // SkillsPage: () => import("@/views/skills/Index"),
     // highcfPage: () => import("@/views/certification/HighCertification"),
     // middlecfPage: () => import("@/views/certification/MiddleCertification"),
@@ -42,13 +42,9 @@ $color-drawer-background: $blue-dark-2;
 
 .page {
   background-color: lightblue;
+  // background-color: white;
   display: flex;
   justify-items: stretch;
-  // background-color: white;
-  // flex-direction: row;
-  // flex-wrap: nowrap; /* | wrap | wrap-reverse; */
-  // justify-content: flex-start;
-  // align-items: stretch;
 }
 
 .page[data-size="A4"] {
@@ -57,25 +53,17 @@ $color-drawer-background: $blue-dark-2;
 }
 
 .container-drawer {
-  background-color: green;
+  // background-color: green;
   background-color: $color-drawer-background;
   flex:0 0 7cm;
 
 }
 
 .container-content {
-  background-color: rgb(179, 3, 3);
+  // background-color: rgb(179, 3, 3);
   padding-left: 0.5cm;
   padding-right: 0.5cm;
   flex:0 0 14cm;
   display:flex;
-  // align-items: stretch;
-  
-  // flex:0 0 14cm;
-  // flex:0 0 100%;
-    // flex:0 0 14cm;
-  // background-color: white;
-  // display: flex;
-  // flex:1 1 14cm;
 }
 </style>

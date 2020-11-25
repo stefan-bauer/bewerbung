@@ -1,8 +1,10 @@
 <template>
-  <div class="content">
+  <div class="cv-content">
     <page-header :subheader="subheader">
-      <template v-slot:header><h2 id="cv">{{ $t("Cv.pageHeader") }}</h2></template>
-      <template v-slot:subheader >Ewig langer Subheader um zu schaun</template>
+      <template v-slot:header
+        ><h2 id="cv">{{ $t("Cv.pageHeader") }}</h2></template
+      >
+      <template v-slot:subheader>Ewig langer Subheader um zu schaun</template>
     </page-header>
 
     <div class="middle">
@@ -13,6 +15,7 @@
       <publicated-section class="publicated"></publicated-section>
       <other-section class="other"></other-section>
     </div>
+    <div class="footer"></div>
   </div>
 </template>
 <script>
@@ -24,7 +27,7 @@ import educationSection from "./components/education";
 import otherSection from "./components/other";
 import PageHeader from "@/components/Header";
 export default {
-  name:"cv",
+  name: "cv",
   components: {
     profileSection,
     workSection,
@@ -34,13 +37,13 @@ export default {
     // InnerHeader,
     PageHeader,
   },
-  data(){
-    return{
-      subheader:{
-        hiddentitle:true,
-        active:true
-      }
-    }
+  data() {
+    return {
+      subheader: {
+        hiddentitle: true,
+        active: true,
+      },
+    };
   },
   methods: {
     checkHtml(text) {
@@ -60,20 +63,21 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+$margin-section-bottom:0.75cm;
 // $margin-content-left: 0.25cm;
 // $margin-inner-content-left: 0.15cm;
 // $margin-group-bottom: 0.5cm;
 // $item-padding-bottom: 0.2cm;
 
-/deep/ h5  {
+/deep/ h5 {
   background-color: rgb(218, 24, 24);
   flex: 2 2 auto;
   // -webkit-flex: 2 2 auto;
   font-size: 10pt;
   font-weight: bold;
-  color: $color-worktable-heading;
+  color: $color-darkest;
 }
-/deep/ h4  {
+/deep/ h4 {
   background-color: rgb(61, 4, 4);
   // flex: 2 2 auto;
   // // -webkit-flex: 2 2 auto;
@@ -82,29 +86,59 @@ export default {
   // color: $color-worktable-heading;
 }
 
-.content {
+.cv-content {
   background-color: aqua;
-  // display:flex;
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  line-height: 1.3;
+
+  .header-container {
+    // background-color: pink;
+    flex: 0 0 100%;
+  }
 
   .middle {
     background-color: rgb(228, 185, 245);
+      display:flex;
+      flex-wrap:wrap;
+      
 
     .profile {
       background-color: rgb(19, 0, 189);
+      flex: 0 0 100%;
+      margin-bottom:$margin-section-bottom;
     }
 
     .work {
       background-color: lightcoral;
+      flex: 0 0 100%;
+      margin-bottom:$margin-section-bottom;
     }
     .education {
       background-color: rgb(180, 128, 240);
+      flex: 0 0 100%;
+      margin-bottom:$margin-section-bottom;
     }
     .publicated {
       background-color: lightcoral;
+      flex: 0 0 100%;
+      margin-bottom:$margin-section-bottom;
     }
     .other {
       background-color: lightcoral;
+      flex: 0 0 100%;
+      margin-bottom:$margin-section-bottom;
     }
+  }
+
+  .footer {
+    background-color: rgb(222, 135, 171);
+    min-width: 5cm;
+    min-height: 1cm;
+    flex: 0 0 100%;
   }
 }
 </style>

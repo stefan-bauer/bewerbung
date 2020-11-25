@@ -11,7 +11,7 @@ $blue-dark-2:#253848;
 $gray-middle: #404040;
 $gray-dark: #222222;
 
-
+$color-darkest:black;
 
 // Speziell zugewiesen
 
@@ -23,3 +23,11 @@ $color-subtitle: $gray-middle;
 $color-default-header: black;
 $color-default-line: black;
 $color-default-text: $gray-dark;
+
+
+$table-dark: #595959;
+$table-light: #7f7f7f;
+
+$color-worktable-heading: black;
+$color-worktable-subheading: $table-dark;
+$color-worktable-date: $table-light;
