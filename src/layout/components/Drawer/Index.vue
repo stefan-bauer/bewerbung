@@ -81,6 +81,12 @@ export default {
 <style lang="scss" scoped>
 $avatar-boarder: $gray-light;
 $drawer-content: $gray-light;
+$color-contatheading: $gray-light;
+$color-drawer-line: $gray;
+$color-drawer-icon:$gray;
+$color-drawer-content: $gray-light;
+// $line-hight-small:$line-hight-small
+
 .drawer {
   background-color: rgb(20, 117, 117);
   
@@ -94,21 +100,25 @@ $drawer-content: $gray-light;
   }
 
   .avatar {
-    // background-color: rgb(20, 117, 117);
+    background-color: rgb(117, 107, 20);
 
     text-align: center;
 
     &-image {
+    // display: flex;
+    // justify-self: center;
+
       border: 2px solid $avatar-boarder;
       border-radius: 100%;
-      width: 80%;
+      width: 100%;
+
     }
   }
 
   .name {
     background-color: rgb(20, 51, 117);
 
-    margin-top: 0.5cm;
+    // margin-top: 0.5cm;
     text-align: left;
     color: $drawer-content;
     font-family: Raleway;
@@ -129,54 +139,55 @@ $drawer-content: $gray-light;
     background-color: rgb(117, 20, 117);
 
     margin: 1.5cm 0 0 0.75cm;
+    line-height: 1.5;
 
     .flexrow {
-      // display: flex;
+      display: flex;
     }
 
     .little_top_space {
-      // margin-top: 0.2cm;
+      margin-top: 0.2cm;
     }
 
     a {
-      // text-decoration: none;
-      // color: inherit;
+      text-decoration: none;
+      color: inherit;
     }
 
     address {
-      // font-style: normal;
+      font-style: normal;
     }
 
     i {
-      // color: $color-drawer-icon;
-      // min-width: 5mm;
-      // max-width: 5mm;
-      // font-size: 10pt;
+      color: $color-drawer-icon;
+      min-width: 5mm;
+      max-width: 5mm;
+      font-size: 10pt;
     }
 
     .content {
-      // background-color: rgb(121, 155, 247);
-      // margin-left: 5px;
-      // font-size: 10pt;
-      // color: $color-drawer-content;
+      background-color: rgb(121, 155, 247);
+      margin-left: 5px;
+      font-size: 10pt;
+      color: $color-drawer-content;
     }
 
     .contact {
       &-heading {
-        // color: $color-drawer-heading;
-        // font-family: Raleway;
-        // font-size: 14pt;
-        // font-weight: bold;
-        // text-transform: uppercase;
+        color: $color-contatheading;
+        font-family: Raleway;
+        font-size: 14pt;
+        font-weight: bold;
+        text-transform: uppercase;
       }
 
       &-line {
-        // margin-top: 15px;
-        // min-height: $line-hight-small;
-        // max-height: $line-hight-small;
-        // width: 55%;
-        // background-color: $color-drawer-line;
-        // margin-bottom: 0.75cm;
+        margin-top: 15px;
+        min-height: $line-hight-small;
+        max-height: $line-hight-small;
+        width: 55%;
+        background-color: $color-drawer-line;
+        margin-bottom: 0.75cm;
       }
     }
 
@@ -186,7 +197,7 @@ $drawer-content: $gray-light;
       }
       .content {
         // background-color: rgb(247, 190, 121);
-        // font-style: normal;
+        font-style: normal;
       }
     }
 
