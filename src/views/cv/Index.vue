@@ -34,7 +34,6 @@ export default {
     publicatedSection,
     educationSection,
     otherSection,
-    // InnerHeader,
     PageHeader,
   },
   data() {
@@ -63,7 +62,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-$margin-section-bottom:0.75cm;
+$margin-section-bottom:0.6cm;
 // $margin-content-left: 0.25cm;
 // $margin-inner-content-left: 0.15cm;
 // $margin-group-bottom: 0.5cm;
@@ -116,7 +115,7 @@ $margin-section-bottom:0.75cm;
       margin-bottom:$margin-section-bottom;
     }
     .education {
-      background-color: rgb(180, 128, 240);
+      // background-color: rgb(180, 128, 240);
       flex: 0 0 100%;
       margin-bottom:$margin-section-bottom;
     }

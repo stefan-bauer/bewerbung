@@ -63,7 +63,6 @@ export default {
     flex-wrap: wrap;
     flex: 0 0 100%;
 
-
     .work-item {
       // background-color: limegreen;
       flex: 0 0 100%;
@@ -79,6 +78,8 @@ export default {
 
       .work-date {
         // background-color: rgb(106, 161, 165);
+        font-size: 9pt;
+        color: $color-worktable-date;
         text-align: right;
       }
 

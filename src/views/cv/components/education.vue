@@ -50,57 +50,52 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-      .education-content {
-        background-color: lightseagreen;
-        display: flex;
-        flex-wrap: wrap;
-        flex-basis: inherit;
-        margin-left: $margin-content-left;
+.education-content {
+  // background-color: lightseagreen;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: $margin-content-left;
 
-        .education-items {
-          display: flex;
-          flex-wrap: wrap;
-          // flex-basis: inherit;
-          flex: 1 1 100%;
+  .education-items {
+    // background-color: lightpink;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 100%;
 
-          background-color: lightpink;
 
-          .education-item {
-            // flex-basis: inherit;
-            display: flex;
-            flex-wrap: wrap;
-            flex: 1 1 100%;
+    .education-item {
+      // background-color: limegreen;
+      flex: 0 0 100%;
+      flex-wrap: wrap;
+      display: flex;
 
-            background-color: limegreen;
-            padding-bottom: 0.1cm;
+      margin-bottom: 0.3cm;
 
-            .education-header {
-              background-color: rgb(90, 80, 238);
-            }
-
-            .education-subheader {
-              background-color: rgb(90, 80, 238);
-              flex: 1 1 100%;
-            }
-
-            .education-date {
-              background-color: rgb(129, 129, 5);
-
-              flex: 1 1 50%;
-              // -webkit-flex: 1 1 auto;
-              font-size: 9pt;
-              color: $color-worktable-date;
-              text-align: right;
-            }
-            .education-description {
-              background-color: rgb(0, 26, 255);
-              margin-left: $margin-inner-content-left;
-              // width: 100%;
-              flex: 1 1 100%;
-              // margin-left: $innercontent-margin-left;
-              font-size: 10pt;
-            }
-          }
-        }
+      .education-header {
+        // background-color: rgb(90, 80, 238);
+        flex: 1 0 50%;
       }
+
+      .education-subheader {
+        // background-color: rgb(90, 80, 238);
+        flex: 0 0 100%;
+      }
+
+      .education-date {
+        // background-color: rgb(129, 129, 5);
+        font-size: 9pt;
+        color: $color-worktable-date;
+        text-align: right;
+
+      }
+
+      .education-description {
+        // background-color: rgb(0, 26, 255);
+        flex: 0 0 100%;
+        padding-left: $margin-inner-content-left;
+        font-size: 10pt;
+      }
+    }
+  }
+}
 </style>
