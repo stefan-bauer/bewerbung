@@ -15,9 +15,9 @@
           <ul>
             <li><a href="#cv"></a></li>
             <li><a href="#skills"></a></li>
-            <li><a href="#highcf"></a></li>
+            <!-- <li><a href="#highcf"></a></li>
             <li><a href="#middlecf"></a></li>
-            <li><a href="#lowcf"></a></li>
+            <li><a href="#lowcf"></a></li> -->
             <!-- <li><a href="#competences-title"></a></li> -->
           </ul>
         </div>
@@ -33,7 +33,7 @@
             <li>
               <a href="#skills">{{ $t("titlePage.TOCContent.skills") }}</a>
             </li>
-            <li>
+            <!-- <li>
               <a href="#highcf">{{ $t("titlePage.TOCContent.highcf") }}</a>
             </li>
             <li>
@@ -41,7 +41,7 @@
             </li>
             <li>
               <a href="#lowcf">{{ $t("titlePage.TOCContent.lowcf") }}</a>
-            </li>
+            </li> -->
             <!-- <li><a href="#competences-title"></a></li> -->
           </ul>
         </div>

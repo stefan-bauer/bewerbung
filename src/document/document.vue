@@ -5,20 +5,20 @@
   <!-- language -->
   <standart-layout content="letter"></standart-layout>
   <div class="mypagespace noPrint"></div>
-  <standart-layout content="title"></standart-layout>
-  <div class="mypagespace noPrint"></div>
-  <standart-layout content="cv"></standart-layout>
-  <div class="mypagespace noPrint"></div>
-  <standart-layout content="skills"></standart-layout>
-  <div class="mypagespace noPrint"></div>
-  <standart-layout content="hightCertification"></standart-layout>
-  <div class="mypagespace noPrint"></div>
-  <standart-layout content="middleCertification"></standart-layout>
-  <div class="mypagespace noPrint"></div>
-  <standart-layout content="lowCertification"></standart-layout>
-  <div class="mypagespace noPrint"></div>
-  <standart-layout content="lowCertificationDouble"></standart-layout>
-  <div class="mypagespace noPrint"></div>
+  <!-- <standart-layout content="title"></standart-layout> -->
+  <!-- <div class="mypagespace noPrint"></div> -->
+  <!-- <standart-layout content="cv"></standart-layout> -->
+  <!-- <div class="mypagespace noPrint"></div> -->
+  <!-- <standart-layout content="skills"></standart-layout> -->
+  <!-- <div class="mypagespace noPrint"></div> -->
+  <!-- <standart-layout content="hightCertification"></standart-layout> -->
+  <!-- <div class="mypagespace noPrint"></div> -->
+  <!-- <standart-layout content="middleCertification"></standart-layout> -->
+  <!-- <div class="mypagespace noPrint"></div> -->
+  <!-- <standart-layout content="lowCertification"></standart-layout> -->
+  <!-- <div class="mypagespace noPrint"></div> -->
+  <!-- <standart-layout content="lowCertificationDouble"></standart-layout> -->
+  <!-- <div class="mypagespace noPrint"></div> -->
   <!-- Cover -->
   <!-- CV -->
 

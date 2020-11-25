@@ -56,20 +56,26 @@ export default {
 
 .container-drawer {
   background-color: $color-drawer-background;
-  flex-basis: 7cm;
+  // flex-basis: 7cm;
+  flex:1 1 7cm;
+  // align-items: center;
   // border:2px black solid;
 }
 
 .container-content {
-  background-color: white;
+  // background-color: white;
+  background-color: rgb(179, 3, 3);
+  display: flex;
+  // flex-wrap:wrap;
+  // align-items: stretch;
+  flex:1 1 14cm;
+  // justify-items: center;
   // background-color: rgba(202, 7, 160, 0.726);
-  flex-basis: 14cm;
+  // flex-basis: 14cm;
   // border:2px rgb(5, 27, 148) solid;
   // padding-bottom: 1cm;
-  margin-left: 0.5cm;
-  margin-right: 0.5cm;
-
-  display: flex;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
   // flex-basis: inherit;
 
   // min-width:100%;

@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="header-container">
     <div class="spacer spacer-top"></div>
     <div class="header-and-line">
       <div class="header">
@@ -58,7 +58,7 @@ h1 {
   color: transparent;
 }
 
-.container {
+.header-container {
 //   background-color: rgb(36, 216, 207);
   //   text-align: center;
   //   margin: 0 auto;
@@ -99,7 +99,7 @@ h1 {
       width: 75%;
       min-height: $line-hight-small;
       max-height: $line-hight-small;
-      margin: 0 auto;
+      // margin: 0 auto;
       margin-top: 0.25cm;
     }
   }

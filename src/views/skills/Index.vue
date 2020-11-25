@@ -2,7 +2,7 @@
   <div class="content">
     <page-header class="page-header" :subheader="subheader">
       <template v-slot:header
-        ><h2>{{ $t("Skills.pageHeader") }}</h2></template
+        ><h2 id="skills">{{ $t("Skills.pageHeader") }}</h2></template
       >
     </page-header>
 
@@ -57,7 +57,7 @@ export default {
 /deep/ h4 {
   // background-color: rgba(241, 110, 110, 0.596);
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: Raleway !important;
   font-size: 11pt;
   font-style: normal;
 

@@ -1,7 +1,7 @@
 <template>
   <div class="content">
     <page-header :subheader="subheader">
-      <template v-slot:header><h2>{{ $t("Cv.pageHeader") }}</h2></template>
+      <template v-slot:header><h2 id="cv">{{ $t("Cv.pageHeader") }}</h2></template>
       <template v-slot:subheader >Ewig langer Subheader um zu schaun</template>
     </page-header>
 

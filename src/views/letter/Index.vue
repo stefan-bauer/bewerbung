@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <page-header :subheader="subheader">
+  <div class="letter-container">
+    <page-header  :subheader="subheader">
       <template v-slot:header>{{ $t("letter.pageHeader") }}</template>
       <template v-slot:subheader>{{ $t("letter.hiddenHeader") }}</template>
     </page-header>
@@ -92,20 +92,30 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container {
-  // background-color: aquamarine;
+.letter-container {
+  // align-self: center;
+  background-color: aquamarine;
   display: flex;
+  // align-items: center;
   flex-wrap: wrap;
-  flex-basis: inherit;
-  // justify-content: space-around;
-  align-content: space-between;
+  // flex:1 1 100%;
+  // flex-basis: inherit;
+  // // justify-content: space-around;
+  // align-content: flex-end;
+
+.header-container{
+  background-color:pink;
+}
+
 
   .middle {
-    // background-color: orange;
+    // display: flex;
+    background-color: orange;
+    flex:1 1 100%;
     .date {
       // background-color: red;
-      flex: 1 1 100%;
-      font-family: Open Sans;
+      // flex: 1 1 100%;
+      font-family: 'Open Sans';
       font-size: 10pt;
       color: black;
       font-weight: bold;
@@ -114,7 +124,7 @@ export default {
 
     .subject {
       // background-color: rgb(255, 127, 217);
-      flex: 1 1 100%;
+      // flex: 1 1 100%;
 
       font-family: Carlito;
       font-size: 10pt;
@@ -126,7 +136,7 @@ export default {
     .salutation {
       // background-color: rgb(173, 247, 179);
       margin-bottom: 0.75cm;
-      flex: 1 1 100%;
+      // flex: 1 1 100%;
 
       font-family: Carlito;
       font-size: 10pt;
@@ -137,7 +147,7 @@ export default {
     .letter {
       // background-color: rgb(244, 127, 255);
       font-family: Carlito;
-      flex: 1 1 100%;
+      // flex: 1 1 100%;
       font-size: 11pt;
       line-height: 1.3;
       // color: black;
@@ -146,7 +156,7 @@ export default {
       p {
         // background-color: rgb(244, 127, 255);
         margin-bottom: 0.5cm;
-        flex: 1 1 100%;
+        // flex: 1 1 100%;
         // color: red;
       }
 
@@ -163,7 +173,7 @@ export default {
 
     .letter-ending {
       // background-color: lightseagreen;
-      flex: 1 1 100%;
+      // flex: 1 1 100%;
 
       p {
         // background-color: rgb(127, 219, 255);
@@ -179,7 +189,7 @@ export default {
 
       .signing-name {
         // background-color: lightcoral;
-        flex: 1 1 100%;
+        // flex: 1 1 100%;
         margin-bottom: 0.5cm;
       }
 
@@ -193,8 +203,10 @@ export default {
     }
   }
   .footer {
-    // background-color: burlywood;
-    height: 0.2cm;
+    background-color: rgb(135, 190, 222);
+    height: 1.2cm;
+    margin-left:1cm;
+    margin-right:1cm;
     flex: 1 1 100%;
   }
 }

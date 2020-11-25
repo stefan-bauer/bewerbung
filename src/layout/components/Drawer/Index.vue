@@ -2,15 +2,6 @@
   <div class="drawer">
     <div class="header"></div>
 
-    <!-- <div class="avatar"> -->
-    <!-- <img src="images/stefan_mirror.jpg" alt="Avatar" class="avatar-image" /> -->
-    <!-- </div> -->
-    <!--  -->
-
-    <!-- <div class="avatar">
-      <img src="images/stefan.jpg" alt="Avatar" class="avatar-image" />
-    </div> -->
-
     <div class="avatar">
       <img :src="source" @error="setAltImg" alt="Avatar" class="avatar-image" />
     </div>
@@ -81,12 +72,9 @@ export default {
 
 
   methods: {
-    // click(){
-    //   console.log(this.$i18n.messages[this.$i18n.locale])
-    // },
+
     setAltImg(event) {
-      console.log("set Alt is coalled");
-      // event.target.src = "images/default/default_avatar.png";
+      // console.log("set Alt is coalled");
       event.target.src = `images/default/${this.$i18n.messages.default.drawerUser.avatarImg}`;
     },
   },
@@ -132,6 +120,7 @@ export default {
     font-size: 14pt;
     font-weight: bold;
     margin-left: 0.75cm;
+    
     &-title {
     }
     &-first {
