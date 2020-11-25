@@ -21,7 +21,7 @@ export default {
 <style lang="scss" scoped>
 $color-title-line:$gray-middle;
 .innerheader {
-  background-color: rgb(89, 63, 205);
+  // background-color: rgb(89, 63, 205);
   display: flex;
   flex-wrap: wrap;
   width: 100%;

@@ -107,7 +107,7 @@ $margin-section-bottom:0.75cm;
       
 
     .profile {
-      background-color: rgb(19, 0, 189);
+      // background-color: rgb(19, 0, 189);
       flex: 0 0 100%;
       margin-bottom:$margin-section-bottom;
     }

@@ -42,11 +42,11 @@ export default {
 <style lang="scss" scoped>
 
   .profile-content {
-    background-color: lightseagreen;
+    // background-color: lightseagreen;
     display: flex;
     flex-wrap: wrap;
     margin-left: $margin-content-left;
-        flex:1 1 100%;
+        flex:0 0 100%;
 
 
     .birth-header {
