@@ -38,6 +38,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+$color-drawer-background: $blue-dark-2;
+
 .page {
   background-color: lightblue;
   display: flex;
@@ -56,18 +58,23 @@ export default {
 
 .container-drawer {
   background-color: green;
-  // background-color: $color-drawer-background;
+  background-color: $color-drawer-background;
   flex:0 0 7cm;
 
 }
 
 .container-content {
   background-color: rgb(179, 3, 3);
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  flex:0 0 14cm;
+  display:flex;
+  
+  // flex:0 0 14cm;
+  // flex:0 0 100%;
     // flex:0 0 14cm;
   // background-color: white;
   // display: flex;
   // flex:1 1 14cm;
-  // padding-left: 0.5cm;
-  // padding-right: 0.5cm;
 }
 </style>

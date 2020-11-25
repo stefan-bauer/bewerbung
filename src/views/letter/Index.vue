@@ -1,12 +1,13 @@
 <template>
   <div class="letter-container">
-    <div class="test-spacer-1"></div>
+    <!-- <div class="test-spacer-1"></div> -->
+    tset teset ateset
     <!-- <page-header  :subheader="subheader">
       <template v-slot:header>{{ $t("letter.pageHeader") }}</template>
       <template v-slot:subheader>{{ $t("letter.hiddenHeader") }}</template>
     </page-header> -->
     <div class="middle">
-    <div class="test-spacer-2"></div>
+    <!-- <div class="test-spacer-2"></div> -->
 
       <!-- <div class="date">
         {{ $t("letter.date") }}
@@ -39,7 +40,7 @@
         </div>
       </div> -->
     </div>
-    <div class="footer"></div>
+    <!-- <div class="footer"></div> -->
   </div>
 </template>
 
@@ -79,6 +80,11 @@ export default {
 <style lang="scss" scoped>
 .letter-container {
   background-color: aquamarine;
+  padding:0.5cm;
+
+  display: flex;
+  flex:0 0 100%;
+  // align-content: stretch;
 
   .test-spacer-1{
     background-color: rgb(1, 77, 51);
