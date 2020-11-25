@@ -16,6 +16,7 @@
       <div class="contact">
         <div class="contact-heading">{{ $t("drawer.contactHeading") }}</div>
         <div class="contact-line"></div>
+        <div class="contact-spacer"></div>
       </div>
 
       <div class="address little_top_space flexrow">
@@ -83,42 +84,41 @@ $avatar-boarder: $gray-light;
 $drawer-content: $gray-light;
 $color-contatheading: $gray-light;
 $color-drawer-line: $gray;
-$color-drawer-icon:$gray;
+$color-drawer-icon: $gray;
 $color-drawer-content: $gray-light;
 // $line-hight-small:$line-hight-small
 
 .drawer {
-  background-color: rgb(20, 117, 117);
-  
+  // background-color: rgb(20, 117, 117);
+
   // line-height: 1.3;
 
   .spacer-header {
-    background-color: rgb(57, 20, 117);
+    // background-color: rgb(57, 20, 117);
 
     min-height: 3cm;
     max-height: 3cm;
   }
 
   .avatar {
-    background-color: rgb(117, 107, 20);
+    // background-color: rgb(117, 107, 20);
 
     text-align: center;
 
     &-image {
-    // display: flex;
-    // justify-self: center;
+      // display: flex;
+      // justify-self: center;
 
       border: 2px solid $avatar-boarder;
       border-radius: 100%;
-      width: 100%;
-
+      width: 80%;
     }
   }
 
   .name {
-    background-color: rgb(20, 51, 117);
+    // background-color: rgb(20, 51, 117);
 
-    // margin-top: 0.5cm;
+    margin-top: 0.5cm;
     text-align: left;
     color: $drawer-content;
     font-family: Raleway;
@@ -136,9 +136,9 @@ $color-drawer-content: $gray-light;
   }
 
   .contact-container {
-    background-color: rgb(117, 20, 117);
+    // background-color: rgb(117, 20, 117);
 
-    margin: 1.5cm 0 0 0.75cm;
+    padding: 1.5cm 0 0 0.75cm;
     line-height: 1.5;
 
     .flexrow {
@@ -146,7 +146,7 @@ $color-drawer-content: $gray-light;
     }
 
     .little_top_space {
-      margin-top: 0.2cm;
+      padding-top: 0.2cm;
     }
 
     a {
@@ -166,14 +166,18 @@ $color-drawer-content: $gray-light;
     }
 
     .content {
-      background-color: rgb(121, 155, 247);
+      // background-color: rgb(121, 155, 247);
       margin-left: 5px;
       font-size: 10pt;
       color: $color-drawer-content;
     }
 
     .contact {
+      // background-color: rgb(63, 95, 4);
+
       &-heading {
+        // background-color: rgb(203, 247, 121);
+
         color: $color-contatheading;
         font-family: Raleway;
         font-size: 14pt;
@@ -187,7 +191,12 @@ $color-drawer-content: $gray-light;
         max-height: $line-hight-small;
         width: 55%;
         background-color: $color-drawer-line;
-        margin-bottom: 0.75cm;
+        // margin-bottom: 0.75cm;
+      }
+
+      &-spacer {
+        min-height: 0.75cm;
+        max-height: 0.75cm;
       }
     }
 
