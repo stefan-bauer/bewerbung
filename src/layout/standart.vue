@@ -69,6 +69,7 @@ $color-drawer-background: $blue-dark-2;
   padding-right: 0.5cm;
   flex:0 0 14cm;
   display:flex;
+  // align-items: stretch;
   
   // flex:0 0 14cm;
   // flex:0 0 100%;
