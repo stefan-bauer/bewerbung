@@ -125,14 +125,14 @@ $margin-section-bottom:0.6cm;
       margin-bottom:$margin-section-bottom;
     }
     .other {
-      background-color: lightcoral;
+      // background-color: lightcoral;
       flex: 0 0 100%;
       margin-bottom:$margin-section-bottom;
     }
   }
 
   .footer {
-    background-color: rgb(222, 135, 171);
+    // background-color: rgb(222, 135, 171);
     min-width: 5cm;
     min-height: 1cm;
     flex: 0 0 100%;
