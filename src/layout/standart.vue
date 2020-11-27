@@ -9,7 +9,7 @@
         <letter-page v-if="content=='letter'"></letter-page>
         <title-page v-if="content=='title'"></title-page>
         <cv-page v-if="content=='cv'"></cv-page>
-        <!-- <skills-page v-if="content=='skills'"></skills-page> -->
+        <skills-page v-if="content=='skills'"></skills-page>
         <!-- <highcf-page v-if="content=='hightCertification'"></highcf-page> -->
         <!-- <middlecf-page v-if="content=='middleCertification'"></middlecf-page> -->
         <!-- <lowcf-page v-if="content=='lowCertification'"></lowcf-page> -->
@@ -28,7 +28,7 @@ export default {
     LetterPage: () => import("@/views/letter/Index"),
     TitlePage: () => import("@/views/title/Index"),
     CvPage: () => import("@/views/cv/Index"),
-    // SkillsPage: () => import("@/views/skills/Index"),
+    SkillsPage: () => import("@/views/skills/Index"),
     // highcfPage: () => import("@/views/certification/HighCertification"),
     // middlecfPage: () => import("@/views/certification/MiddleCertification"),
     // lowcfPage: () => import("@/views/certification/LowCertification"),

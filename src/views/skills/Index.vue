@@ -1,6 +1,6 @@
 <template>
-  <div class="content">
-    <page-header class="page-header" :subheader="subheader">
+  <div class="skill-content">
+    <page-header class="header-container" :subheader="subheader">
       <template v-slot:header
         ><h2 id="skills">{{ $t("Skills.pageHeader") }}</h2></template
       >
@@ -10,6 +10,8 @@
       <it-section class="it"></it-section>
       <lang-section class="lang"></lang-section>
     </div>
+
+    <div class="footer"></div>
   </div>
 </template>
 <script>
@@ -46,10 +48,12 @@ export default {
 </script>
 <style lang="scss" scoped>
 
+$margin-section-bottom:0.6cm;
+
+
 /deep/ h5 {
   // background-color: rgb(218, 24, 24);
   flex: 2 2 auto;
-  // -webkit-flex: 2 2 auto;
   font-size: 10pt;
   font-weight: bold;
   color: $color-worktable-heading;
@@ -60,28 +64,11 @@ export default {
   font-family: Raleway;
   font-size: 11pt;
   font-style: normal;
+  font-weight: normal;
 
-  // -----grundeinstellunge h4
-  display: block;
-  margin-block-start: 0px;
-  margin-block-end: 0px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  // margin-block-start: 1.33em;
-  // margin-block-end: 1.33em;
-  // margin-inline-start: 0px;
-  // margin-inline-end: 0px;
-  font-weight: 400;
-  // -------------
-
-  // flex: 2 2 auto;
-  // // -webkit-flex: 2 2 auto;
-  // font-size: 10pt;
-  // font-weight: bold;
-  // color: $color-worktable-heading;
 }
 
-// /deep/ h3 { 
+// /deep/ h3 {
 //   color:green !important;
 //   font-size: 17pt !important;
 // }
@@ -94,27 +81,45 @@ export default {
   color: $gray-middle;
 }
 
-.page-header {
-  flex: 1 1 100%;
-}
-
-.content {
+.skill-content {
   // background-color: rgb(0, 68, 255);
-  flex: 1 1 100%;
+  flex: 0 0 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  line-height: 1.3;
+
+  .header-container {
+    // background-color: pink;
+    flex: 0 0 100%;
+  }
 
   .middle {
     // margin-top: 1cm;
     // background-color: rgb(228, 185, 245);
-    .it {
-      // background-color: rgb(228, 185, 245);
-      margin-top: 1cm;
+          display:flex;
+      flex-wrap:wrap;
+      flex: 0 0 100%;
 
+    .it {
+      background-color: rgb(181, 174, 238);
+      flex: 0 0 100%;
+      margin-bottom:$margin-section-bottom;
     }
 
     .lang {
-      // background-color: rgb(240, 245, 174);
-      margin-top: 1cm;
+      background-color: rgb(208, 129, 245);
+      flex: 0 0 100%;
+      margin-bottom:$margin-section-bottom;
     }
+  }
+
+  .footer {
+    background-color: rgb(222, 135, 171);
+    min-width: 5cm;
+    min-height: 1cm;
+    flex: 0 0 100%;
   }
 }
 </style>
