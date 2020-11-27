@@ -53,7 +53,7 @@ export default {
     return {
       source: `images/persona/${this.$t("letter.signingImg")}`,
       subheader: {
-        hiddentitle: false,
+        hiddentitle: true,
         active: true,
       },
     };

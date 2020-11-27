@@ -25,11 +25,11 @@
             <span class="ititem-connector" v-if="item.description != null"
               >:</span
             >
-            <!-- <span -->
-              <!-- class="ititem-description description" -->
-              <!-- v-if="item.description != null" -->
-              <!-- v-html="item.description" -->
-            <!-- ></span> -->
+            <span
+              class="ititem-description description"
+              v-if="item.description != null"
+              v-html="item.description"
+            ></span>
             <!-- the ending -->
             <span
               class="it-itemending"
@@ -88,7 +88,7 @@ export default {
     margin-bottom: 0.2cm;
 
     .it-container {
-      background-color: rgb(164, 19, 184);
+      // background-color: rgb(164, 19, 184);
       display: flex;
       flex-wrap: wrap;
       flex: 0 0 100%;
@@ -98,7 +98,7 @@ export default {
       // padding-bottom: 0.75cm;
 
       .it-item {
-        background-color: rgb(5, 171, 201);
+        // background-color: rgb(5, 171, 201);
         margin-top: 0.15cm;
         display: inline-block;
         // flex-wrap:wrap;
@@ -107,26 +107,26 @@ export default {
       }
 
       .ititem-title {
-        background-color: rgb(196, 246, 255);
+        // background-color: rgb(196, 246, 255);
         display:inline-block;
         // flex: 0 0 auto;
       }
       .ititem-connector {
-        background-color: rgb(51, 50, 58);
+        // background-color: rgb(51, 50, 58);
         padding-right: 4px;
         // flex: 0 0 auto;
         display:inline-block;
       }
 
       .ititem-description {
-        background-color: rgb(2, 145, 170);
+        // background-color: rgb(2, 145, 170);
         // flex: 0 0 auto;
         display:inline-block;
       }
 
       .it-itemending {
-        background-color: rgb(255, 196, 237);
-        padding-right: 4px;
+        // background-color: rgb(255, 196, 237);
+        padding-right: 3px;
         display:inline-block;
         // flex: 1 0 auto;
       }

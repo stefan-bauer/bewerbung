@@ -103,20 +103,20 @@ $margin-section-bottom:0.6cm;
       flex: 0 0 100%;
 
     .it {
-      background-color: rgb(181, 174, 238);
+      // background-color: rgb(181, 174, 238);
       flex: 0 0 100%;
       margin-bottom:$margin-section-bottom;
     }
 
     .lang {
-      background-color: rgb(208, 129, 245);
+      // background-color: rgb(208, 129, 245);
       flex: 0 0 100%;
       margin-bottom:$margin-section-bottom;
     }
   }
 
   .footer {
-    background-color: rgb(222, 135, 171);
+    // background-color: rgb(222, 135, 171);
     min-width: 5cm;
     min-height: 1cm;
     flex: 0 0 100%;
