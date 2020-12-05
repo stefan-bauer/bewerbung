@@ -160,9 +160,11 @@ $color-drawer-content: $gray-light;
 
     i {
       color: $color-drawer-icon;
-      min-width: 5mm;
-      max-width: 5mm;
-      font-size: 10pt;
+      min-width: 5mm !important;
+      max-width: 5mm !important;
+      font-size: 10pt !important;;
+      font-style: normal;
+      font-weight: lighter;
     }
 
     .content {
@@ -203,6 +205,7 @@ $color-drawer-content: $gray-light;
     .address {
       i {
         // background-color: rgba(133, 73, 1, 0.692);
+        font-size:16px !important;
       }
       .content {
         // background-color: rgb(247, 190, 121);

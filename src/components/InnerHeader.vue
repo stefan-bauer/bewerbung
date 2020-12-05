@@ -30,7 +30,8 @@ $color-title-line:$gray-middle;
   // // margin: 0 auto;
   h3 {
     // background-color: cyan;
-    font-family: Raleway;
+    font-family: Lato;
+    // font-family: Raleway;
     font-weight: bold;
     font-size: 14pt;
     color: $color-default-header;

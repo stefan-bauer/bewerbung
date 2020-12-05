@@ -1,13 +1,13 @@
 <template>
   <div>
-    <div class="page" data-size="A4">
+    <div class="page" data-size="A4" :class="{naked_page :content=='title'}">
 
       <div class="container-drawer">
         <my-drawer></my-drawer>
       </div>
       <div class="container-content">
         <letter-page v-if="content=='letter'"></letter-page>
-        <title-page v-if="content=='title'"></title-page>
+        <title-page v-if="content=='title'" class="naked_page"></title-page>
         <cv-page v-if="content=='cv'"></cv-page>
         <skills-page v-if="content=='skills'"></skills-page>
         <highcf-page v-if="content=='hightCertification'"></highcf-page>
@@ -40,6 +40,10 @@ export default {
 <style lang="scss" scoped>
 $color-drawer-background: $blue-dark-2;
 
+.naked_page {
+  page: naked;
+}
+
 .page {
   // background-color: lightblue;
   background-color: white;
@@ -53,7 +57,7 @@ $color-drawer-background: $blue-dark-2;
 }
 
 .container-drawer {
-  background-color: rgb(233, 233, 233);
+  background-color: rgb(129, 127, 127);
   // background-color: $color-drawer-background;
   flex:0 0 7cm;
 

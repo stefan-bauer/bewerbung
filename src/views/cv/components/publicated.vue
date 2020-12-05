@@ -68,6 +68,8 @@ export default {
 
   .publicated-types {
     // background-color: rgb(74, 55, 95);
+          flex: 0 0 100%;
+
 
     .publicated-type {
       // background-color: rgb(0, 231, 216);
@@ -75,10 +77,11 @@ export default {
     }
 
     .publicated-items {
-      // background-color: rgb(227, 236, 219);
+      // background-color: rgb(203, 250, 162);
+      flex: 0 0 100%;
       display: flex;
       flex-wrap: wrap;
-      margin-left: $margin-inner-content-left;
+      padding-left: $margin-inner-content-left;
 
       .publicated-item {
         // background-color: rgb(95, 55, 78);

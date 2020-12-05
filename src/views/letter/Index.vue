@@ -130,15 +130,21 @@ export default {
 
       p {
         // // background-color: rgb(244, 127, 255);
+        font-size: 10pt;
         margin-bottom: 0.5cm;
       }
     }
 
     .letter-ending {
       // background-color: lightseagreen;
+      
+      p{
+        font-size: 10pt;
+      }
 
       .signing-name {
         // background-color: lightcoral;
+        font-size: 10pt;
         margin-bottom: 0.5cm;
       }
 
