@@ -25,6 +25,8 @@ pnpm-debug.log*
 
 /public/images/persona/*
 /src/assets/images/persona/*
-/src/locales/de.js
-/src/locales/en.js
+# /src/locales/Personal/*
+/src/i18nData/Personal/*
+# /src/locales/de.js
+# /src/locales/en.js
 /PdfOutput/*

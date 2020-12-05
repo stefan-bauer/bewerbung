@@ -7,9 +7,9 @@ import {
   cvLayout as cvL,
   skillsLayout as skL,
   titleLayout as tiL,
-} from "../i18nData/Default/layout";
+} from "../i18nData/Personal/De/layout";
 
-import { letter as Contact } from "../i18nData/Default/toContact";
+import { letter as Contact } from "../i18nData/Personal/De/toContact";
 
 import {
   user as User,
@@ -18,7 +18,7 @@ import {
   highCertification as userHc,
   middleCertification as userMc,
   lowCertification as userLc
-} from "../i18nData/Default/user";
+} from "../i18nData/Personal/De/user";
 
 /* --------------------------- */
 

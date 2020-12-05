@@ -10,9 +10,9 @@
         <title-page v-if="content=='title'"></title-page>
         <cv-page v-if="content=='cv'"></cv-page>
         <skills-page v-if="content=='skills'"></skills-page>
-        <!-- <highcf-page v-if="content=='hightCertification'"></highcf-page> -->
-        <!-- <middlecf-page v-if="content=='middleCertification'"></middlecf-page> -->
-        <!-- <lowcf-page v-if="content=='lowCertification'"></lowcf-page> -->
+        <highcf-page v-if="content=='hightCertification'"></highcf-page>
+        <middlecf-page v-if="content=='middleCertification'"></middlecf-page>
+        <lowcf-page v-if="content=='lowCertification'"></lowcf-page>
         <!-- <lowcf-dbpage v-if="content=='lowCertificationDouble'"></lowcf-dbpage> -->
       </div>
     </div>
@@ -29,9 +29,9 @@ export default {
     TitlePage: () => import("@/views/title/Index"),
     CvPage: () => import("@/views/cv/Index"),
     SkillsPage: () => import("@/views/skills/Index"),
-    // highcfPage: () => import("@/views/certification/HighCertification"),
-    // middlecfPage: () => import("@/views/certification/MiddleCertification"),
-    // lowcfPage: () => import("@/views/certification/LowCertification"),
+    highcfPage: () => import("@/views/certification/HighCertification"),
+    middlecfPage: () => import("@/views/certification/MiddleCertification"),
+    lowcfPage: () => import("@/views/certification/LowCertification"),
     // lowcfDbpage: () => import("@/views/certificationDouble/LowCertification"),
   },
 };
@@ -53,8 +53,8 @@ $color-drawer-background: $blue-dark-2;
 }
 
 .container-drawer {
-  // background-color: green;
-  background-color: $color-drawer-background;
+  background-color: rgb(233, 233, 233);
+  // background-color: $color-drawer-background;
   flex:0 0 7cm;
 
 }
@@ -62,7 +62,7 @@ $color-drawer-background: $blue-dark-2;
 .container-content {
   // background-color: rgb(179, 3, 3);
   padding-left: 0.5cm;
-  padding-right: 0.5cm;
+  padding-right: 1cm;
   flex:0 0 14cm;
   display:flex;
 }

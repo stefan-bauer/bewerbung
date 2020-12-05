@@ -44,18 +44,22 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+ $color-image-boarder: $blue-dark-2;
 .content {
   // background-color: rgba(71, 207, 8, 0.726);
+  flex: 0 0 100%;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-basis: inherit;
   align-content: space-between;
+  line-height: 1.3;
 
-  .page-header {
-    // background-color: rgba(71, 207, 8, 0.726);
-    padding-top: 1cm;
+
+  .header-container {
+    // background-color: pink;
+    flex: 0 0 100%;
   }
-
+  
   .middle {
     // background-color: green;
     flex-basis: inherit;

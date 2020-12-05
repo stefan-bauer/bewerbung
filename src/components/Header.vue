@@ -41,7 +41,8 @@ $heigt-spacer-bottom: 0.25cm;
 h2 {
   // background-color: cyan;
   font-family: Raleway;
-  font-weight: bold;
+  font-weight: normal;
+  font-style: normal;
   font-size: 28pt;
   color: $color-title;
 }
@@ -80,7 +81,8 @@ h1 {
     .header {
         // background-color: rgb(195, 0, 255);
       font-family: Raleway;
-      font-weight: bold;
+      font-weight: normal;
+      // font-weight: bold;
       font-size: 28pt;
       color: $color-title;
     }

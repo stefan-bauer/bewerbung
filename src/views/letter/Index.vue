@@ -125,7 +125,7 @@ export default {
     .letter {
       // background-color: rgb(244, 127, 255);
       font-family: Carlito;
-      font-size: 11pt;
+      font-size: 10pt;
       line-height: 1.3;
 
       p {
