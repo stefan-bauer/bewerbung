@@ -18,10 +18,17 @@ with open('dist/de.html', 'r') as readfile1:
 with open('dist/de_pdf.html', 'w') as file_output1:
     file_output1.write(data1)
 
+with open('dist/en.html', 'r') as readfile2:
+    data2 = readfile2.read().replace('="/css', '="css')
+
+with open('dist/en_pdf.html', 'w') as file_output2:
+    file_output2.write(data2)
+
 print('HTML TRANSFERED')
 
 
 otherlog=HTML('dist/de_pdf.html').write_pdf('PdfOutput/De.pdf')
+otherlog=HTML('dist/en_pdf.html').write_pdf('PdfOutput/En.pdf')
 
 print('PDF BUILD FINISHED')
 

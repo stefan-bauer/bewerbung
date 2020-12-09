@@ -121,7 +121,7 @@ $color-drawer-content: $gray-light;
     margin-top: 0.5cm;
     text-align: left;
     color: $drawer-content;
-    font-family: Raleway;
+    font-family: Lato;
     font-size: 14pt;
     font-weight: bold;
     margin-left: 0.75cm;
@@ -142,7 +142,9 @@ $color-drawer-content: $gray-light;
     line-height: 1.5;
 
     .flexrow {
+    // background-color: rgb(114, 241, 220);
       display: flex;
+
     }
 
     .little_top_space {
@@ -159,12 +161,15 @@ $color-drawer-content: $gray-light;
     }
 
     i {
+      // background-color: rgb(213, 247, 121);
       color: $color-drawer-icon;
       min-width: 5mm !important;
       max-width: 5mm !important;
       font-size: 10pt !important;;
       font-style: normal;
       font-weight: lighter;
+      line-height: 1.3;
+      align-self: flex-end;
     }
 
     .content {
@@ -172,6 +177,7 @@ $color-drawer-content: $gray-light;
       margin-left: 5px;
       font-size: 10pt;
       color: $color-drawer-content;
+      align-self: flex-end;
     }
 
     .contact {
@@ -181,7 +187,7 @@ $color-drawer-content: $gray-light;
         // background-color: rgb(203, 247, 121);
 
         color: $color-contatheading;
-        font-family: Raleway;
+        font-family: Lato;
         font-size: 14pt;
         font-weight: bold;
         text-transform: uppercase;
@@ -205,10 +211,12 @@ $color-drawer-content: $gray-light;
     .address {
       i {
         // background-color: rgba(133, 73, 1, 0.692);
+        align-self: flex-end;
         font-size:16px !important;
       }
       .content {
         // background-color: rgb(247, 190, 121);
+        align-self: flex-end;
         font-style: normal;
       }
     }

@@ -70,7 +70,7 @@ import {
     Profile: {
       Header: cvL.Profile.Header,
       BirthHeader: cvL.Profile.BirthHeader,
-      BirthDate: User.birthDay.toLocaleDateString("de-DE", User.optionsGeb),
+      BirthDate: User.birthDay.toLocaleDateString("en-US", User.optionsGeb),
       descriptionContent: userCv.Profile.description,
     },
     Work: {

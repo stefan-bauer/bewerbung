@@ -105,7 +105,7 @@ export default {
 
     .subject {
       // background-color: rgb(255, 127, 217);
-      font-family: Carlito;
+      font-family: 'Open Sans';
       font-size: 10pt;
       color: black;
       // // font-weight: bold;
@@ -116,7 +116,7 @@ export default {
     .salutation {
       // background-color: rgb(173, 247, 179);
       margin-bottom: 0.75cm;
-      font-family: Carlito;
+      font-family: 'Open Sans';
       font-size: 10pt;
       color: black;
       font-weight: bold;
@@ -124,26 +124,31 @@ export default {
 
     .letter {
       // background-color: rgb(244, 127, 255);
-      font-family: Carlito;
+      font-family: 'Open Sans';
       font-size: 10pt;
       line-height: 1.3;
 
       p {
         // // background-color: rgb(244, 127, 255);
+        font-family: 'Open Sans';
         font-size: 10pt;
-        margin-bottom: 0.5cm;
+        margin-bottom: 0.4cm;
       }
     }
 
     .letter-ending {
       // background-color: lightseagreen;
+      line-height: 1.3;
       
       p{
+        font-family: 'Open Sans';
         font-size: 10pt;
+        line-height: 1.3;
       }
 
       .signing-name {
         // background-color: lightcoral;
+        font-family: 'Open Sans';
         font-size: 10pt;
         margin-bottom: 0.5cm;
       }

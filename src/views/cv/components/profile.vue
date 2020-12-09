@@ -65,6 +65,10 @@ export default {
       padding-top: 0.1cm;
       width: 100%;
       text-align: left;
+
+      p{
+        font-size: 10pt;
+      }
     }
   }
 // }

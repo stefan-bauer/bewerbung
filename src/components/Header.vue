@@ -105,7 +105,7 @@ h1 {
     flex: 0 0  100%;
     text-align: center;
     margin-top: 0.25cm;
-    font-family: Raleway;
+    font-family: Lato;
     font-size: 14pt;
     color: $color-subtitle;
 

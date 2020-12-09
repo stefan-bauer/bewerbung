@@ -72,7 +72,7 @@ export default {
       .certification-image {
         width: 100%;
         z-index: 1;
-        border: 4px solid $color-image-boarder;
+        border: 2px solid $gray-light;
       }
     }
   }

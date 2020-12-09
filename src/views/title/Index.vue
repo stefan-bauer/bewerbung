@@ -9,8 +9,11 @@
     </div>
     <div class="footer">
       <div class="table_of_content onlyPrint">
-        <div class="heading">{{ $t("titlePage.TOC") }}</div>
-        <div class="line"></div>
+        <!-- <div class="heading">{{ $t("titlePage.TOC") }}</div> -->
+                    <inner-header>
+      <template v-slot:header> {{ $t("titlePage.TOC") }} </template>
+    </inner-header>
+        <!-- <div class="line"></div> -->
         <div class="table">
           <ul>
             <li><a href="#cv"></a></li>
@@ -23,8 +26,11 @@
         </div>
       </div>
       <div class="table_of_content noPrint">
-        <div class="heading">{{ $t("titlePage.TOC") }}</div>
-        <div class="line"></div>
+        <!-- <div class="heading">{{ $t("titlePage.TOC") }}</div> -->
+            <inner-header>
+      <template v-slot:header> {{ $t("titlePage.TOC") }} </template>
+    </inner-header>
+        <!-- <div class="line"></div> -->
         <div class="table">
           <ul>
             <li>
@@ -52,10 +58,12 @@
 
 <script>
 import PageHeader from "@/components/Header";
+import InnerHeader from "@/components/InnerHeader";
 export default {
   name: "title_content",
   components: {
     PageHeader,
+    InnerHeader,
   },
   data() {
     return {
@@ -103,7 +111,7 @@ export default {
       margin-right: 1cm;
 
       .heading {
-        font-family: Raleway;
+        font-family: Lato;
         font-size: 14pt;
         font-weight: bold;
         color: $color-default-header;

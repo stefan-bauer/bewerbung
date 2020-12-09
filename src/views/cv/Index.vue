@@ -76,7 +76,7 @@ $margin-section-bottom:0.6cm;
 /deep/ h4 {
   // background-color: rgb(61, 4, 4);
   text-transform: uppercase;
-  font-family: Raleway;
+  font-family: Lato;
   font-size: 11pt;
   font-style: normal;
   font-weight: normal;

@@ -106,7 +106,7 @@ export default {
     .table_of_content {
       margin-left: 1cm;
       .heading {
-        font-family: Raleway;
+        font-family: Lato;
         font-size: 14pt;
         font-weight: bold;
         color: $color-default-header;
