@@ -57,8 +57,8 @@ $color-drawer-background: $blue-dark-2;
 }
 
 .container-drawer {
-  background-color: rgb(204, 204, 204);
-  // background-color: $color-drawer-background;
+  // background-color: rgb(204, 204, 204);
+  background-color: $color-drawer-background;
   flex:0 0 7cm;
 
 }

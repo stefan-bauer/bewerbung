@@ -15,7 +15,7 @@
 
           <span class="langitem-title title">{{ item.title }}</span>
           <span class="langitem-connector" v-if="item.description != null"
-            >:</span
+            > </span
           >
           <span
             class="langitem-description description"
