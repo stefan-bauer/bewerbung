@@ -155,7 +155,7 @@ export default {
 
       .signing-image {
         // background-color: brown;
-        width: 30%;
+        width: 20%;
         color: white;
         flex: 0 0 100%;
         margin-left: 0.25cm;

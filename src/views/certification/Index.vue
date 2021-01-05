@@ -69,10 +69,12 @@ export default {
       display: block;
       text-align: center;
 
+
       .certification-image {
         width: 100%;
         z-index: 1;
         border: 2px solid $gray-light;
+        
       }
     }
   }
