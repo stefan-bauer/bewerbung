@@ -14,7 +14,7 @@ $item-padding-bottom: 0.2cm;
 }
 
 html {
-  font-size: 11pt;
+  font-size: 10pt;
   // color: green;
   // color: $color-default-text;
   color: $gray-dark;
@@ -98,11 +98,11 @@ body {
   }
   
   @bottom-right{
-    content: counter(page) ' /  6';
-    font-size: 9pt;
-    height: 0cm;
-    vertical-align: top;
-    width: 100%;
+    // content: counter(page) ' /  6';
+    // font-size: 9pt;
+    // height: 0cm;
+    // vertical-align: top;
+    // width: 100%;
   }
 
 

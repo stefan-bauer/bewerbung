@@ -33,7 +33,7 @@ $color-title-line:$gray-middle;
     font-family: Lato;
     // font-family: Raleway;
     font-weight: bold;
-    font-size: 14pt;
+    font-size: 13pt;
     color: $color-default-header;
   }
 

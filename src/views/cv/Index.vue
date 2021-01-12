@@ -69,7 +69,7 @@ $margin-section-bottom:0.6cm;
 
 /deep/ h5 {
   // background-color: rgb(218, 24, 24);
-  font-size: 10pt;
+  font-size: 9pt;
   font-weight: bold;
   color: $color-darkest;
 }
@@ -77,7 +77,7 @@ $margin-section-bottom:0.6cm;
   // background-color: rgb(61, 4, 4);
   text-transform: uppercase;
   font-family: Lato;
-  font-size: 11pt;
+  font-size: 10pt;
   font-style: normal;
   font-weight: normal;
 }

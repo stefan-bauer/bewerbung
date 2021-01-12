@@ -32,6 +32,7 @@ export const letter = {
   dateOptions: Contact.dateOptions,
   subject: Contact.subject,
   salutation: Contact.salutation,
+  addOn: Contact.addOn,
   letterContent: Contact.letterContent,
   letterEnding: Contact.letterEnding,
   signing: User.fullName,

@@ -41,7 +41,11 @@
 
 
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="addon">
+        {{$t("letter.addOn")}}
+      </div>
+    </div>
   </div>
 </template>
 
@@ -97,7 +101,7 @@ export default {
     .date {
       // background-color: rgb(255, 127, 217);
       font-family: 'Open Sans';
-      font-size: 10pt;
+      font-size: 9.5pt;
       color: black;
       font-weight: bold;
       margin-bottom: 0.5cm;
@@ -106,18 +110,18 @@ export default {
     .subject {
       // background-color: rgb(255, 127, 217);
       font-family: 'Open Sans';
-      font-size: 10pt;
+      font-size: 9.5pt;
       color: black;
       // // font-weight: bold;
       // text-transform: uppercase;
-      margin-bottom: 1.5cm;
+      margin-bottom: 1.3cm;
     }
 
     .salutation {
       // background-color: rgb(173, 247, 179);
       margin-bottom: 0.75cm;
       font-family: 'Open Sans';
-      font-size: 10pt;
+      font-size: 9.5pt;
       color: black;
       font-weight: bold;
     }
@@ -125,13 +129,13 @@ export default {
     .letter {
       // background-color: rgb(244, 127, 255);
       font-family: 'Open Sans';
-      font-size: 10pt;
+      font-size: 9.5pt;
       line-height: 1.3;
 
       p {
         // // background-color: rgb(244, 127, 255);
         font-family: 'Open Sans';
-        font-size: 10pt;
+        font-size: 9.5pt;
         margin-bottom: 0.4cm;
       }
     }
@@ -142,23 +146,23 @@ export default {
       
       p{
         font-family: 'Open Sans';
-        font-size: 10pt;
+        font-size: 9.5pt;
         line-height: 1.3;
       }
 
       .signing-name {
         // background-color: lightcoral;
         font-family: 'Open Sans';
-        font-size: 10pt;
+        font-size: 9.5pt;
         margin-bottom: 0.5cm;
       }
 
       .signing-image {
         // background-color: brown;
-        width: 20%;
+        width: 25%;
         color: white;
         flex: 0 0 100%;
-        margin-left: 0.25cm;
+        margin-left: 0.45cm;
       }
     }
   }
@@ -167,6 +171,14 @@ export default {
     min-width: 5cm;
     min-height: 1px;
     flex: 0 0 100%;
+
+    .addon{
+      padding-bottom: 0.5cm;
+      font-family: "Open Sans";
+      font-size: 6pt;
+      line-height: 1.3;
+      color:grey;
+    }
   }
 }
 </style>

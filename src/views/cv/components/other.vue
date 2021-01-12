@@ -15,7 +15,7 @@
             <h5>{{ item.Header }}</h5>
           </div>
           <div class="other-date" v-if="item.DateStart">
-            {{ item.DateStart }} - {{ item.DateEnd }}
+            {{ item.DateStart }}–{{ item.DateEnd }}
           </div>
           <div class="other-description">
             {{ item.Description }}
@@ -76,7 +76,8 @@ export default {
 
       .other-date {
         // background-color: rgb(129, 129, 5);
-        font-size: 9pt;
+        font-size: 8pt;
+        font-style:italic;
         color: $color-worktable-date;
         text-align: right;
       }

@@ -13,7 +13,7 @@
           <div class="work-header">
             <h5>{{ item.Header }}</h5>
           </div>
-          <div class="work-date">{{ item.DateStart }} - {{ item.DateEnd }}</div>
+          <div class="work-date">{{ item.DateStart }}–{{ item.DateEnd }}</div>
           <div class="work-description" v-if="item.Description">
             <p v-if="!checkHtml(item.Description)">
               {{ item.Description }}
@@ -78,7 +78,8 @@ export default {
 
       .work-date {
         // background-color: rgb(106, 161, 165);
-        font-size: 9pt;
+        font-size: 8pt;
+        font-style:italic;
         color: $color-worktable-date;
         text-align: right;
       }

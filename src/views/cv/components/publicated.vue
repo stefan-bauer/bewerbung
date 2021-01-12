@@ -102,7 +102,8 @@ export default {
 
         .publicated-date {
           // background-color: rgb(95, 55, 55);
-          font-size: 9pt;
+          font-size: 8pt;
+        font-style:italic;
           color: $color-worktable-date;
           text-align: right;
         }
@@ -110,6 +111,7 @@ export default {
         .publicated-author {
           // background-color: rgb(55, 58, 95);
           font-style: italic;
+          font-size: 8pt;
         }
       }
     }

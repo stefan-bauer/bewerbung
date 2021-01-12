@@ -40,36 +40,42 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.profile-content {
+  // background-color: lightseagreen;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: $margin-content-left;
+  flex: 0 0 100%;
 
-  .profile-content {
-    // background-color: lightseagreen;
+  .birth-header {
+    // background-color: darkcyan;
     display: flex;
-    flex-wrap: wrap;
-    margin-left: $margin-content-left;
-        flex:0 0 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-weight: bold;
+    line-height: inherit;
+    font-size: 9pt;
+  }
 
+  .birth-date {
+    // background-color: fuchsia;
+    margin-left: 0.15cm;
+    display: flex;
+    justify-content: flex-end;
+    align-items:flex-end;
+    font-size: 9pt;
+  }
 
-    .birth-header {
-      // background-color: darkcyan;
-      font-weight: bold;
-      line-height: inherit;
-    }
+  .profile-description {
+    // background-color: firebrick;
+    padding-top: 0.1cm;
+    width: 100%;
+    text-align: left;
 
-    .birth-date {
-      // background-color: fuchsia;
-      margin-left: 0.25cm;
-    }
-
-    .profile-description {
-      // background-color: firebrick;
-      padding-top: 0.1cm;
-      width: 100%;
-      text-align: left;
-
-      p{
-        font-size: 10pt;
-      }
+    p {
+      font-size: 9pt;
     }
   }
+}
 // }
 </style>

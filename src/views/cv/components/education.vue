@@ -83,7 +83,8 @@ export default {
 
       .education-date {
         // background-color: rgb(129, 129, 5);
-        font-size: 9pt;
+        font-size: 8pt;
+        font-style:italic;
         color: $color-worktable-date;
         text-align: right;
 
@@ -93,7 +94,7 @@ export default {
         // background-color: rgb(0, 26, 255);
         flex: 0 0 100%;
         padding-left: $margin-inner-content-left;
-        font-size: 10pt;
+        font-size: 9pt;
       }
     }
   }
